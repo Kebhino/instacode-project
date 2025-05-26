@@ -16,7 +16,7 @@ const GridList = () => {
       <GridItem bg={"#1A202C"} colSpan={2}>
         <NavigationBar />
       </GridItem>
-      <GridItem color={"black"} colSpan={2} p={8}>
+      <GridItem color={"black"} colSpan={2}>
         <MainSection />
       </GridItem>
 
