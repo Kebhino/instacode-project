@@ -1,5 +1,5 @@
-import { Logo } from "@/assets/InstaCodeLogo";
-import { Grid, GridItem, VStack } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
+import NavigationBar from "./NavBar";
 
 const GridList = () => {
   return (
@@ -7,9 +7,13 @@ const GridList = () => {
       templateRows="auto 1fr 1fr auto"
       templateColumns={{ base: "1fr", md: "1fr" }}
       minH="100vh"
+      maxW={"1200px"}
+      mx={"auto"}
+      justifyContent={"center"}
+      bg={"white"}
     >
       <GridItem bg={"#1A202C"} colSpan={2}>
-        <Logo boxSize={100} color="teal.400" />
+        <NavigationBar />
       </GridItem>
       <GridItem bg={"indigo.400"}></GridItem>
 
