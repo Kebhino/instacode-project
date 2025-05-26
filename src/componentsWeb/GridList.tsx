@@ -1,5 +1,6 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
+import MainSection from "./MainSection";
 
 const GridList = () => {
   return (
@@ -15,10 +16,15 @@ const GridList = () => {
       <GridItem bg={"#1A202C"} colSpan={2}>
         <NavigationBar />
       </GridItem>
-      <GridItem bg={"indigo.400"}></GridItem>
+      <GridItem color={"black"} colSpan={2} p={8}>
+        <MainSection />
+      </GridItem>
 
-      <GridItem colSpan={2} bg={"blue.200"}>
-        footer
+      <GridItem
+        colSpan={2}
+        background="linear-gradient(0deg,rgba(255, 255, 255, 0.38) 0%, rgba(0, 153, 255, 0.16) 100%)"
+      >
+        MAIN
       </GridItem>
       <GridItem colSpan={2} bg={"red"}>
         footer
