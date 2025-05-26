@@ -8,18 +8,20 @@ const ClientSlider = () => {
     <Box overflow="hidden" w="100%" bg={"white"} py={4}>
       <MotionBox
         display="flex"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
       >
         <HStack gap={10}>
-          {[...logos, ...logos, ...logos].map((logo, i) => (
-            <Image
-              key={i}
-              src={logo.logo}
-              boxSize="120px"
-              objectFit="contain"
-            />
-          ))}
+          {[...logos, ...logos, ...logos, ...logos, ...logos, ...logos].map(
+            (logo, i) => (
+              <Image
+                key={i}
+                src={logo.logo}
+                boxSize="120px"
+                objectFit="contain"
+              />
+            )
+          )}
         </HStack>
       </MotionBox>
     </Box>
