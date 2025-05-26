@@ -2,11 +2,12 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
 import SliderComp from "./SliderComp";
+import Footer from "./FooterComp";
 
 const GridList = () => {
   return (
     <Grid
-      templateRows="auto 1fr 1fr auto"
+      templateRows="auto 1fr auto auto"
       templateColumns={{ base: "1fr", md: "1fr" }}
       minH="100vh"
       maxW={"1200px"}
@@ -27,8 +28,8 @@ const GridList = () => {
       >
         <SliderComp />
       </GridItem>
-      <GridItem colSpan={2} bg={"red"}>
-        footer
+      <GridItem colSpan={2} bg={"white"}>
+        <Footer />
       </GridItem>
     </Grid>
   );

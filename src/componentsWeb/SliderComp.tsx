@@ -5,7 +5,7 @@ import logos from "@/data/loga/loga";
 const ClientSlider = () => {
   const MotionBox = motion(Box);
   return (
-    <Box overflow="hidden" w="100%" bg="gray.100" py={4}>
+    <Box overflow="hidden" w="100%" bg={"white"} py={4}>
       <MotionBox
         display="flex"
         animate={{ x: ["0%", "-50%"] }}
