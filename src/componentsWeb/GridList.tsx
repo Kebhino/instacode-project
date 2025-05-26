@@ -1,4 +1,4 @@
-import { Grid, GridItem, Slider } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
 import SliderComp from "./SliderComp";
