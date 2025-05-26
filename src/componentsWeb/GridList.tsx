@@ -1,6 +1,7 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem, Slider } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
+import SliderComp from "./SliderComp";
 
 const GridList = () => {
   return (
@@ -24,7 +25,7 @@ const GridList = () => {
         colSpan={2}
         background="linear-gradient(0deg,rgba(255, 255, 255, 0.38) 0%, rgba(0, 153, 255, 0.16) 100%)"
       >
-        MAIN
+        <SliderComp />
       </GridItem>
       <GridItem colSpan={2} bg={"red"}>
         footer
