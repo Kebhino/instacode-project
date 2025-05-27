@@ -6,7 +6,15 @@ import SvgTop from "./SvgTop";
 
 const NavigationBar = () => {
   return (
-    <Box position="relative" bg="white" color="white" overflow="hidden">
+    <Box
+      position="relative"
+      color="white"
+      overflow="hidden"
+      backgroundColor="#ffffff"
+      backgroundImage={`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2386ddfb' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")`}
+      backgroundRepeat="repeat"
+      minH="200px"
+    >
       <Box py={1} textAlign="center">
         <HStack
           align="center"
@@ -26,8 +34,8 @@ const NavigationBar = () => {
           <NavLink mx={50} to="/" textWrap={"nowrap"}>
             O nas
           </NavLink>
-          <NavLink marginRight={10} to="/">
-            Konakt
+          <NavLink marginRight={10} to="/kontakt">
+            Kontakt
           </NavLink>
         </HStack>
         <TextHeader />

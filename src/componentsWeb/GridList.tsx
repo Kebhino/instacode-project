@@ -13,19 +13,15 @@ const GridList = () => {
       maxW={"1200px"}
       mx={"auto"}
       justifyContent={"center"}
-      bg={"white"}
     >
-      <GridItem bg={"#1A202C"} colSpan={2}>
+      <GridItem colSpan={2}>
         <NavigationBar />
       </GridItem>
       <GridItem color={"black"} colSpan={2}>
         <MainSection />
       </GridItem>
 
-      <GridItem
-        colSpan={2}
-        background="linear-gradient(0deg,rgba(255, 255, 255, 0.38) 0%, rgba(0, 153, 255, 0.16) 100%)"
-      >
+      <GridItem colSpan={2}>
         <SliderComp />
       </GridItem>
       <GridItem colSpan={2} bg={"white"}>

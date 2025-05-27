@@ -1,8 +1,4 @@
 import { Box, Heading, Stack, Text, Flex } from "@chakra-ui/react";
-import { FaReact, FaAws, FaGithub } from "react-icons/fa";
-import { SiChakraui } from "react-icons/si";
-import { MdSpeed, MdDesignServices } from "react-icons/md";
-import { AiOutlineApi } from "react-icons/ai";
 
 const AboutSection = () => {
   return (
@@ -12,7 +8,6 @@ const AboutSection = () => {
       mx="auto"
       borderRadius="lg"
       position="relative"
-      bg="linear-gradient(rgba(255, 255, 255, 1), rgba(0, 153, 255, 0.117), rgba(255, 255, 255, 1))"
       overflow="hidden"
     >
       {/* Pikselowe tło */}
@@ -58,54 +53,6 @@ const AboutSection = () => {
       >
         {/* Lewa kolumna - lista */}
         <Stack gap={6} flex="1" maxW="700px">
-          <Text fontSize={{ base: "sm", md: "md" }} fontWeight="semibold">
-            Nasze doświadczenie obejmuje:
-          </Text>
-
-          <Stack pl={4} gap={2} fontSize={{ base: "sm", md: "md" }}>
-            <Flex align="center" gap={2}>
-              <FaReact color="#61DAFB" />
-              <Text>Strony i aplikacje React / React Native</Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <AiOutlineApi color="#E535AB" />
-              <Text>Integracje z API, obsługa danych, zarządzanie stanem</Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <SiChakraui color="#319795" />
-              <Text>Dynamiczne komponenty z Chakra UI</Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <MdSpeed color="#F59E0B" />
-              <Text>
-                Optymalizacja wydajności (lazy loading, WebP, responsywność)
-              </Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <FaAws color="#FF9900" />
-              <Text>Hosting i zarządzanie na AWS, Vercel, Netlify</Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <MdDesignServices color="#4A5568" />
-              <Text>UI/UX, projektowanie interfejsów, animacje</Text>
-            </Flex>
-            <Flex align="center" gap={2}>
-              <FaGithub color="#181717" />
-              <Text>Git, GitHub, workflow zespołowy</Text>
-            </Flex>
-          </Stack>
-
-          <Text fontSize={{ base: "sm", md: "md" }} fontWeight="semibold">
-            Przykłady naszych projektów:
-          </Text>
-
-          <Stack pl={4} gap={2} fontSize={{ base: "sm", md: "md" }}>
-            <Text>✅ GameHub – aplikacja do odkrywania gier</Text>
-            <Text>✅ KebeProjects – portfolio umiejętności</Text>
-            <Text>✅ Snake Game – dynamiczna gra w React</Text>
-            <Text>✅ Certyfikaty – zarządzanie i prezentacja certyfikatów</Text>
-          </Stack>
-
           <Text
             fontSize={{ base: "md", md: "lg" }}
             fontWeight="bold"
