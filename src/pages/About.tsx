@@ -58,7 +58,6 @@ const About = () => {
         alignItems="center"
         justifyContent="center"
         marginBottom={8}
-        minWidth={"1200px"}
       >
         <Box
           bg="whiteAlpha.800"
@@ -68,7 +67,6 @@ const About = () => {
           maxW="600px"
           textAlign="center"
           boxShadow="lg"
-          minWidth={"1000px"}
         >
           <Heading size="lg" mb={4} color="blue.500">
             O nas:
