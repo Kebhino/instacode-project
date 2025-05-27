@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem, Text } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
 import SliderComp from "./SliderComp";
@@ -22,6 +22,9 @@ const GridList = () => {
       </GridItem>
 
       <GridItem colSpan={2}>
+        <Text fontSize="lg" color="gray.700" textAlign="center" mb={4}>
+          <b>Tworzyliśmy systemy dla takich firm jak:</b>
+        </Text>
         <SliderComp />
       </GridItem>
       <GridItem colSpan={2} bg={"white"}>

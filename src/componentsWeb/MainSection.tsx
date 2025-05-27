@@ -28,8 +28,9 @@ const AboutSection = () => {
       <Stack gap={4} textAlign="center" maxW="800px" mx="auto" zIndex="1">
         <Heading
           as="h2"
-          fontSize={{ base: "2xl", md: "4xl" }}
+          fontSize={{ base: "2xl", md: "3xl" }}
           textShadow="0 0 8px rgba(0,153,255,0.4)"
+          my={20}
         >
           InstaCode – Twój partner w cyfrowej transformacji
         </Heading>
@@ -52,7 +53,7 @@ const AboutSection = () => {
         zIndex="1"
       >
         {/* Lewa kolumna - lista */}
-        <Stack gap={6} flex="1" maxW="700px">
+        <Stack gap={6} flex="1" textAlign="center">
           <Text
             fontSize={{ base: "md", md: "lg" }}
             fontWeight="bold"
@@ -65,23 +66,6 @@ const AboutSection = () => {
         </Stack>
 
         {/* Prawa kolumna - symbol kodu */}
-        <Flex
-          align="center"
-          justify="center"
-          flex="1"
-          display={{ base: "none", md: "flex" }}
-        >
-          <Heading
-            as="h1"
-            fontSize={{ base: "6xl", md: "9xl" }}
-            color="blue.400"
-            textAlign="center"
-            textShadow="0 0 20px rgba(59,130,246,0.6)"
-            animation="pulse 4s ease-in-out infinite"
-          >
-            {"< / >"}
-          </Heading>
-        </Flex>
       </Flex>
 
       {/* Animacje tła */}

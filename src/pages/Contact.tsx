@@ -35,7 +35,7 @@ const Contact = () => {
             <NavLink gap={10} to="/" textWrap={"nowrap"}>
               Strona Główna
             </NavLink>
-            <NavLink mx={50} to="/oNas" textWrap={"nowrap"}>
+            <NavLink mx={50} to="/about" textWrap={"nowrap"}>
               O nas
             </NavLink>
             <NavLink marginRight={10} to="/kontakt">
