@@ -16,7 +16,11 @@ const UnderMain = () => {
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <FiTarget color="#00163E" />
             </Box>
-            <Text marginTop={3} fontSize={17} textAlign={"center"}>
+            <Text
+              marginTop={3}
+              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
+              textAlign={"center"}
+            >
               {" "}
               <b>Pełne dopasowanie</b>
             </Text>
@@ -32,7 +36,11 @@ const UnderMain = () => {
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <FiTarget color="#00163E" />
             </Box>
-            <Text marginTop={3} fontSize={17} textAlign={"center"}>
+            <Text
+              marginTop={3}
+              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
+              textAlign={"center"}
+            >
               {" "}
               <b>Pełne dopasowanie</b>
             </Text>
@@ -48,7 +56,10 @@ const UnderMain = () => {
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <FiTarget color="#00163E" />
             </Box>
-            <Text marginTop={3} fontSize={17}>
+            <Text
+              marginTop={3}
+              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
+            >
               {" "}
               <b>Pełne dopasowanie</b>
             </Text>
