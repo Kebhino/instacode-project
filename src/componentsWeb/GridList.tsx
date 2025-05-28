@@ -3,6 +3,7 @@ import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
 import SliderComp from "./SliderComp";
 import Footer from "./FooterComp";
+import UnderMain from "./UnderMain";
 
 const GridList = () => {
   return (
@@ -19,6 +20,7 @@ const GridList = () => {
       </GridItem>
       <GridItem color={"black"} colSpan={2}>
         <MainSection />
+        <UnderMain />
       </GridItem>
 
       <GridItem colSpan={2}>

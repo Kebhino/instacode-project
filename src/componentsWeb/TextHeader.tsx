@@ -8,13 +8,16 @@ const TextHeader = () => {
     <MotionText
       fontSize="4xl"
       fontWeight="bold"
-      color="black"
+      color="white"
       mt={4}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      Technologia, która wspiera Twój biznes.
+      Dedykowane systemy IT dla Twojej firmy
+      <Text fontSize="xl" mt={4} color={"white.600"} mb={4}>
+        Autmatyzuj. Optymalizuj. Zarządzaj.{" "}
+      </Text>
     </MotionText>
   );
 };

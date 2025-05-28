@@ -7,7 +7,7 @@ type SvgProps = ComponentProps<typeof InstaCodeLogo>;
 
 export const Logo = (props: SvgProps) => (
   <InstaCodeLogo
-    viewBox="0 0 1024 1024"
+    viewBox="100 100 800 800"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid meet"
     {...props}

@@ -1,8 +1,6 @@
 import { Logo } from "@/assets/InstaCodeLogo";
-import { Box, HStack, Spacer, Text } from "@chakra-ui/react";
+import { Box, HStack, Spacer } from "@chakra-ui/react";
 import { NavLink } from "./NavLink";
-import TextHeader from "./TextHeader";
-import SvgTop from "./SvgTop";
 
 const NavigationBar = () => {
   return (
@@ -10,10 +8,10 @@ const NavigationBar = () => {
       position="relative"
       color="white"
       overflow="hidden"
-      backgroundColor="#ffffff"
-      backgroundImage={`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2386ddfb' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")`}
-      backgroundRepeat="repeat"
-      minH="200px"
+      backgroundColor="white"
+      minH="100px"
+      borderRadius={"15px 15px 0 0"}
+      boxShadow="0 2px 4px rgba(0,0,0,0.05)"
     >
       <Box py={1} textAlign="center">
         <HStack
@@ -24,7 +22,9 @@ const NavigationBar = () => {
         >
           <Logo
             minW={20}
-            boxSize={{ base: 20, md: 150, lg: 200 }}
+            marginLeft={{ base: "none", md: 10, lg: 10 }}
+            width={{ base: 50, md: 100, lg: 100 }}
+            height={{ base: 50, md: 100, lg: 100 }}
             color="black"
           />
           <Spacer />
@@ -38,13 +38,7 @@ const NavigationBar = () => {
             Kontakt
           </NavLink>
         </HStack>
-        <TextHeader />
-        <Text fontSize="xl" mt={4} color={"gray.600"} mb={4}>
-          Innowacja zakodowana w każdej linii.
-        </Text>
       </Box>
-
-      <SvgTop />
     </Box>
   );
 };

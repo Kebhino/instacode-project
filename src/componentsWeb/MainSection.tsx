@@ -1,88 +1,33 @@
-import { Box, Heading, Stack, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import bgImage from "@/assets/tlo.webp";
 
 const AboutSection = () => {
   return (
     <Box
       p={{ base: 4, md: 8 }}
       maxW="1200px"
-      mx="auto"
-      borderRadius="lg"
+      minH={400}
+      bgImage={`url(${bgImage})`}
       position="relative"
       overflow="hidden"
+      bgColor={"#0b2b4c"}
+      boxShadow="0 2px 4px rgba(0,0,0,0.05)"
     >
-      {/* Pikselowe tło */}
-      <Box
-        position="absolute"
-        top="0"
-        left="0"
-        w="100%"
-        h="100%"
-        backgroundImage="radial-gradient(#3b82f6 1px, transparent 1px)"
-        backgroundSize="20px 20px"
-        opacity="0.1"
-        pointerEvents="none"
-        animation="moveBackground 15s linear infinite"
-      />
-
       {/* Heading + opis */}
-      <Stack gap={4} textAlign="center" maxW="800px" mx="auto" zIndex="1">
+      <Stack gap={4} textAlign="left" maxW="800px" mx="10" zIndex="1">
         <Heading
-          as="h2"
-          fontSize={{ base: "2xl", md: "3xl" }}
-          textShadow="0 0 8px rgba(0,153,255,0.4)"
-          my={20}
+          as={"h1"}
+          fontSize={{ base: "2.5rem", md: "2.5rem" }}
+          my={10}
+          color={"white"}
+          lineHeight={1.3}
         >
-          InstaCode – Twój partner w cyfrowej transformacji
-        </Heading>
-
-        <Text fontSize={{ base: "md", md: "lg" }} color="gray.700">
-          Tworzymy dedykowane oprogramowanie dla firm, łącząc technologię z
-          estetyką. Projektujemy i wdrażamy nowoczesne rozwiązania, które
-          usprawniają procesy biznesowe, automatyzują pracę i wyróżniają marki w
-          cyfrowym świecie.
-        </Text>
-      </Stack>
-
-      {/* Dwukolumnowy układ pod spodem */}
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        justify="space-between"
-        gap={8}
-        mt={12}
-        position="relative"
-        zIndex="1"
-      >
-        {/* Lewa kolumna - lista */}
-        <Stack gap={6} flex="1" textAlign="center">
-          <Text
-            fontSize={{ base: "md", md: "lg" }}
-            fontWeight="bold"
-            textAlign="center"
-            mt={4}
-          >
-            Chcesz, by Twoja firma była nowoczesna, widoczna i działała
-            sprawniej? Skontaktuj się z nami!
+          Dedykowane systemy <br /> IT dla Twojej firmy
+          <Text fontSize={"lg"} fontWeight={0} my={2}>
+            Automatyzuj. Optymalizuj. Zarządzaj.
           </Text>
-        </Stack>
-
-        {/* Prawa kolumna - symbol kodu */}
-      </Flex>
-
-      {/* Animacje tła */}
-      <style>
-        {`
-          @keyframes moveBackground {
-            from { background-position: 0 0; }
-            to { background-position: 100% 100%; }
-          }
-
-          @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-          }
-        `}
-      </style>
+        </Heading>
+      </Stack>
     </Box>
   );
 };
