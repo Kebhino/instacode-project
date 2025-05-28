@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { FiTarget } from "react-icons/fi";
 
 const UnderMain = () => {
