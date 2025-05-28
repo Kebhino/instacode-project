@@ -6,7 +6,7 @@ const AboutSection = () => {
     <Box
       p={{ base: 4, md: 8 }}
       maxW="1200px"
-      minH={400}
+      minH={{ base: "200px", md: "300px", lg: "400px" }}
       bgImage={`url(${bgImage})`}
       position="relative"
       overflow="hidden"

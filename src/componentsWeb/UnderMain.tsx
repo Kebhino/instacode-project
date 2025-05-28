@@ -1,7 +1,16 @@
-import { Box, SimpleGrid, Text, VStack } from "@chakra-ui/react";
-import { FiTarget } from "react-icons/fi";
+import {
+  Box,
+  SimpleGrid,
+  Text,
+  useBreakpointValue,
+  VStack,
+} from "@chakra-ui/react";
+
+import { ShieldCheck, ChartNoAxesCombined, Handshake } from "lucide-react";
 
 const UnderMain = () => {
+  const iconSize = useBreakpointValue({ base: 20, md: 40, lg: 40 });
+
   return (
     <SimpleGrid
       columns={3}
@@ -14,7 +23,7 @@ const UnderMain = () => {
         <VStack>
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <FiTarget color="#00163E" />
+              <Handshake size={iconSize} color="#00163E" />
             </Box>
             <Text
               marginTop={3}
@@ -34,7 +43,7 @@ const UnderMain = () => {
         <VStack>
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <FiTarget color="#00163E" />
+              <ChartNoAxesCombined size={iconSize} color="#00163E" />
             </Box>
             <Text
               marginTop={3}
@@ -42,10 +51,10 @@ const UnderMain = () => {
               textAlign={"center"}
             >
               {" "}
-              <b>Pełne dopasowanie</b>
+              <b>Skalowalność</b>
             </Text>
             <Text fontSize={10} marginTop={2} textAlign={"center"}>
-              Tworzymy oprogoramowanie <br /> stworzone pod twoje procesy
+              Nasze systemy <br /> rosną razem z twoim biznesem
             </Text>
           </Box>
         </VStack>
@@ -54,17 +63,17 @@ const UnderMain = () => {
         <VStack>
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <FiTarget color="#00163E" />
+              <ShieldCheck size={iconSize} color="#00163E" />
             </Box>
             <Text
               marginTop={3}
               fontSize={{ base: "10px", md: "15px", lg: "20px" }}
             >
               {" "}
-              <b>Pełne dopasowanie</b>
+              <b>Bezpieczeństo</b>
             </Text>
-            <Text fontSize={10} marginTop={2}>
-              Tworzymy oprogoramowanie <br /> stworzone pod twoje procesy
+            <Text fontSize={10} marginTop={2} textAlign={"center"}>
+              Wysoka ochrona kodu <br /> i ochona kodu
             </Text>
           </Box>
         </VStack>
