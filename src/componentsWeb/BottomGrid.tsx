@@ -42,7 +42,7 @@ const BottomGrid = () => {
         </VStack>
       </Box>
 
-      <Box bg="#F6FCFE" p={5}>
+      <Box bg="#F6FCFE" p={5} borderRadius={10}>
         <VStack gap={2} align="center">
           <Image src={logoCuprum} color="#00163E" />
 
