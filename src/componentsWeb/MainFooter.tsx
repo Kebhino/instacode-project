@@ -10,7 +10,7 @@ const MainFooter = () => {
     <SimpleGrid
       columns={1}
       gap={3}
-      bg="#F6FCFE"
+      bg="white"
       padding={{ base: 4, md: 10 }}
       textAlign="left"
       maxW="1200px"
@@ -25,9 +25,10 @@ const MainFooter = () => {
         justifyContent={{ base: "space-between", md: "space-between" }}
         flexWrap="wrap"
         gap={{ base: 2, md: 4 }}
+        marginRight={{ base: 2, md: 10, lg: 10 }}
       >
         <Image
-          height={{ base: "50px", md: "60px", lg: "80px" }}
+          height={{ base: "50px", md: "60px", lg: "150px" }}
           src={logoReact}
         />
         <Image
@@ -35,15 +36,15 @@ const MainFooter = () => {
           src={logoDoTNet}
         />
         <Image
-          height={{ base: "17px", md: "50px", lg: "60px" }}
+          height={{ base: "17px", md: "50px", lg: "40px" }}
           src={logoNode}
         />
         <Image
-          height={{ base: "25px", md: "60px", lg: "80px" }}
+          height={{ base: "25px", md: "60px", lg: "60px" }}
           src={logoPython}
         />
         <Image
-          height={{ base: "20px", md: "60px", lg: "80px" }}
+          height={{ base: "20px", md: "60px", lg: "50px" }}
           src={logoAws}
         />
       </HStack>

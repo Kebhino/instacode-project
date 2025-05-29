@@ -1,8 +1,8 @@
-import abartLogo from '@/assets/logaSlider/abart-logo.webp'
-import apsLogo from '@/assets/logaSlider/aps-logo.webp'
-import cuprumLogo from '@/assets/logaSlider/cuprum-logo.webp'
-import instaglassLogo from '@/assets/logaSlider/instaglass-logo.webp'
-import znanylekarzLogo from '@/assets/logaSlider/znanylekarz-logo.webp'
+import abartLogo from '@/assets/logaSlider/abart-blue3.webp'
+import apsLogo from '@/assets/logaSlider/aps-logo-blue.webp'
+import cuprumLogo from '@/assets/logaSlider/cuprum-logo-blue.webp'
+import instaglassLogo from '@/assets/logaSlider/instaglass-logo-blue.webp'
+import znanylekarzLogo from '@/assets/logaSlider/znanylekarz-blue.webp'
 
 
 

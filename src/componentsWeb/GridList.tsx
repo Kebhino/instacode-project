@@ -29,8 +29,8 @@ const GridList = () => {
         <MainFooter />
       </GridItem>
 
-      <GridItem colSpan={2}>
-        <Text fontSize="lg" color="gray.700" textAlign="center" mb={4}>
+      <GridItem colSpan={2} bg={"white"}>
+        <Text fontSize="lg" color="#00163E" textAlign="center" mb={4}>
           <b>Tworzyliśmy systemy dla takich firm jak:</b>
         </Text>
         <SliderComp />
