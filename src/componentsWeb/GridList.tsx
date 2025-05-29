@@ -6,6 +6,7 @@ import Footer from "./FooterComp";
 import UnderMain from "./UnderMain";
 import Oferta from "./Oferta";
 import BottomGrid from "./BottomGrid";
+import MainFooter from "./MainFooter";
 
 const GridList = () => {
   return (
@@ -25,6 +26,7 @@ const GridList = () => {
         <UnderMain />
         <Oferta />
         <BottomGrid />
+        <MainFooter />
       </GridItem>
 
       <GridItem colSpan={2}>
