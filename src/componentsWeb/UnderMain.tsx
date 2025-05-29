@@ -15,72 +15,46 @@ const UnderMain = () => {
     <SimpleGrid
       columns={3}
       gap={3}
-      bgColor={"white"}
-      bg={"#F6FCFE"}
+      bg="#F6FCFE"
       padding={{ base: 4, md: 10 }}
-      justifyItems="center"
-      alignItems="center"
       textAlign="center"
       maxW="1200px"
       mx="auto"
+      placeItems="center"
     >
       <Box>
-        <VStack align="center">
-          <Box justifyItems={"center"}>
-            <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <Handshake size={iconSize} color="#00163E" />
-            </Box>
-            <Text
-              marginTop={3}
-              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
-              textAlign={"center"}
-            >
-              {" "}
-              <b>Pełne dopasowanie</b>
-            </Text>
-            <Text fontSize={10} marginTop={2} textAlign={"center"}>
-              Tworzymy oprogoramowanie <br /> stworzone pod twoje procesy
-            </Text>
-          </Box>
+        <VStack gap={2} align="center">
+          <Handshake size={iconSize} color="#00163E" />
+          <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>
+            <b>Pełne dopasowanie</b>
+          </Text>
+          <Text fontSize={10}>
+            Tworzymy oprogoramowanie <br /> stworzone pod twoje procesy
+          </Text>
         </VStack>
       </Box>
+
       <Box>
-        <VStack align="center">
-          <Box justifyItems={"center"}>
-            <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <ChartNoAxesCombined size={iconSize} color="#00163E" />
-            </Box>
-            <Text
-              marginTop={3}
-              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
-              textAlign={"center"}
-            >
-              {" "}
-              <b>Skalowalność</b>
-            </Text>
-            <Text fontSize={10} marginTop={2} textAlign={"center"}>
-              Nasze systemy <br /> rosną razem z twoim biznesem
-            </Text>
-          </Box>
+        <VStack gap={2} align="center">
+          <ChartNoAxesCombined size={iconSize} color="#00163E" />
+          <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>
+            <b>Skalowalność</b>
+          </Text>
+          <Text fontSize={10}>
+            Nasze systemy <br /> rosną razem z twoim biznesem
+          </Text>
         </VStack>
       </Box>
+
       <Box>
-        <VStack align="center">
-          <Box justifyItems={"center"}>
-            <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-              <ShieldCheck size={iconSize} color="#00163E" />
-            </Box>
-            <Text
-              marginTop={3}
-              fontSize={{ base: "10px", md: "15px", lg: "20px" }}
-            >
-              {" "}
-              <b>Bezpieczeństo</b>
-            </Text>
-            <Text fontSize={10} marginTop={2} textAlign={"center"}>
-              Wysoka ochrona kodu <br /> i ochona kodu
-            </Text>
-          </Box>
+        <VStack gap={2} align="center">
+          <ShieldCheck size={iconSize} color="#00163E" />
+          <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>
+            <b>Bezpieczeństwo</b>
+          </Text>
+          <Text fontSize={10}>
+            Wysoka ochrona kodu <br /> i ochrona danych
+          </Text>
         </VStack>
       </Box>
     </SimpleGrid>
