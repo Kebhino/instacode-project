@@ -5,6 +5,7 @@ import SliderComp from "./SliderComp";
 import Footer from "./FooterComp";
 import UnderMain from "./UnderMain";
 import Oferta from "./Oferta";
+import BottomGrid from "./BottomGrid";
 
 const GridList = () => {
   return (
@@ -23,6 +24,7 @@ const GridList = () => {
         <MainSection />
         <UnderMain />
         <Oferta />
+        <BottomGrid />
       </GridItem>
 
       <GridItem colSpan={2}>
