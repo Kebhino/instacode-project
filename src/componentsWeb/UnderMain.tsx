@@ -18,6 +18,11 @@ const UnderMain = () => {
       bgColor={"white"}
       bg={"#F6FCFE"}
       padding={{ base: 4, md: 10 }}
+      justifyItems="center"
+      alignItems="center"
+      textAlign="center"
+      maxW="1200px"
+      mx="auto"
     >
       <Box>
         <VStack>
