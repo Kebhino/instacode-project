@@ -25,7 +25,7 @@ const UnderMain = () => {
       mx="auto"
     >
       <Box>
-        <VStack>
+        <VStack align="center">
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <Handshake size={iconSize} color="#00163E" />
@@ -45,7 +45,7 @@ const UnderMain = () => {
         </VStack>
       </Box>
       <Box>
-        <VStack>
+        <VStack align="center">
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <ChartNoAxesCombined size={iconSize} color="#00163E" />
@@ -65,7 +65,7 @@ const UnderMain = () => {
         </VStack>
       </Box>
       <Box>
-        <VStack>
+        <VStack align="center">
           <Box justifyItems={"center"}>
             <Box fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
               <ShieldCheck size={iconSize} color="#00163E" />
