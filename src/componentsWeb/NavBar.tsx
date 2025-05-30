@@ -26,12 +26,16 @@ const NavigationBar = () => {
         py={4}
         px={{ base: 0, md: 4, lg: 4 }} // <-- padding lewo/prawo dla całego HStacka
       >
-        <Image
-          src={LogoAS}
-          height={{ base: "30px", md: "40px", lg: "50px" }}
-          ml={{ base: 0, md: 2, lg: 4 }}
-          mt={2}
-        />
+        <NavLink to="/">
+          <Image
+            src={LogoAS}
+            height={{ base: "30px", md: "40px", lg: "50px" }}
+            ml={{ base: 0, md: 2, lg: 4 }}
+            mt={2}
+            alt="InstaCode Logo"
+            cursor="pointer" // dodajemy kursor wskazujący, że to link
+          />
+        </NavLink>
 
         <HStack gap={6}>
           <NavLink to="/">

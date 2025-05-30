@@ -2,38 +2,17 @@ import { Box, SimpleGrid, Text, VStack, Image } from "@chakra-ui/react";
 import logoCuprum from "@/assets/logaSlider/cuprum-logo-blue.webp";
 import logoIG from "@/assets/logaSlider/instaglass-logo-blue.webp";
 import logoZL from "@/assets/logaSlider/znanylekarz-blue.webp";
-import { motion } from "framer-motion";
-
-const MotionText = motion(Text);
-const MotionBox = motion(Box);
+import SectorsTexT from "./SectorsTextComp";
 
 const Realizacje = () => {
   return (
     <>
-      <Box bg={"white"} fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
-        <VStack gap={4}>
-          <MotionText
-            fontSize={{ base: "20px", md: "30px", lg: "40px" }}
-            fontWeight="bold"
-            color="#00163E"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Realizacje
-          </MotionText>
-
-          <MotionBox
-            width="80px"
-            height="4px"
-            bg="#0099FF"
-            borderRadius="full"
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transformOrigin="left"
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          />
-        </VStack>
+      <Box
+        bg={"white"}
+        fontSize={{ base: "20px", md: "40px", lg: "40px" }}
+        py={{ base: 2, md: 8 }}
+      >
+        <SectorsTexT sectorname={"Realizacje"} />
       </Box>
       <SimpleGrid
         columns={{ base: 1, md: 3, lg: 3 }}

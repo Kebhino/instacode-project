@@ -5,7 +5,7 @@ import Footer from "./FooterComp";
 import UnderMain from "./UnderMain";
 import Oferta from "./Oferta";
 import Realizacje from "./Realizacje";
-import MainFooter from "./MainFooter";
+import Technologie from "./Technologie";
 
 const GridList = () => {
   return (
@@ -28,9 +28,9 @@ const GridList = () => {
       </GridItem>
 
       <GridItem colSpan={2} bg={"white"}>
-        <MainFooter />
+        <Technologie />
       </GridItem>
-      <GridItem colSpan={2} bg={"white"}>
+      <GridItem colSpan={2} bg="#00163E">
         <Footer />
       </GridItem>
     </Grid>

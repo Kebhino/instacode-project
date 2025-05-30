@@ -1,24 +1,21 @@
 // src/pages/Contact.tsx
-
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
-
 import Footer from "@/componentsWeb/FooterComp";
 import NavBar from "@/componentsWeb/NavBar";
+import MainSection from "@/componentsWeb/MainSection";
 
 const Contact = () => {
   return (
     <>
       <NavBar />
+      <MainSection />
 
       <Box
         p={8}
-        backgroundColor="#ffffff"
-        backgroundImage={`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2386ddfb' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")`}
-        backgroundRepeat="repeat"
+        bg={"white"}
         display="flex"
         alignItems="center"
         justifyContent="center"
-        marginBottom={8}
       >
         <Box
           bg="whiteAlpha.800"

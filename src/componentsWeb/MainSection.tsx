@@ -1,7 +1,7 @@
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 import bgImage from "@/assets/tlo.webp";
 
-const AboutSection = () => {
+const MainSection = () => {
   return (
     <Box
       p={{ base: 4, md: 8 }}
@@ -36,4 +36,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default MainSection;

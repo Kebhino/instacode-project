@@ -4,12 +4,14 @@ const Footer = () => {
   return (
     <Box
       as="footer"
-      bg="#00163E"
-      color="blackAlpha.950"
+      bg="white"
       py={4}
       textAlign="center"
+      borderRadius={"0 0 25px 25px"}
+      borderColor={"red"}
+      overflow="hidden"
     >
-      <Text fontSize="sm" color={"white"}>
+      <Text fontSize="sm" color="#00163E">
         &copy; {new Date().getFullYear()} InstaCode. Wszystkie prawa
         zastrzeżone.
       </Text>

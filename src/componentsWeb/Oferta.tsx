@@ -1,35 +1,10 @@
-import { Box, SimpleGrid, Text, VStack } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-
-const MotionText = motion(Text);
-const MotionBox = motion(Box);
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
+import SectorsTexT from "./SectorsTextComp";
 
 const Oferta = () => {
   return (
-    <Box bg="white" py={{ base: 8, md: 12 }} textAlign="center">
-      <VStack gap={4}>
-        <MotionText
-          fontSize={{ base: "20px", md: "30px", lg: "40px" }}
-          fontWeight="bold"
-          color="#00163E"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Oferta
-        </MotionText>
-
-        <MotionBox
-          width="80px"
-          height="4px"
-          bg="#0099FF"
-          borderRadius="full"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transformOrigin="left"
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        />
-      </VStack>
+    <Box bg="white" py={{ base: 2, md: 4 }} textAlign="center">
+      <SectorsTexT sectorname={"Oferta"} />
 
       <SimpleGrid
         columns={{ base: 1, md: 3 }}
