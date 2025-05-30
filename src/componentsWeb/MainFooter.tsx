@@ -3,7 +3,7 @@ import logoReact from "@/assets/techonologieLoga/react.webp";
 import logoPython from "@/assets/techonologieLoga/python-logo.webp";
 import logoNode from "@/assets/techonologieLoga/nodejs.webp";
 import logoAws from "@/assets/techonologieLoga/amazon-logo.webp";
-import logoDoTNet from "@/assets/techonologieLoga/dotnet-logo.webp";
+import logoPhp from "@/assets/logaSlider/php-logo-blue.webp";
 
 const MainFooter = () => {
   return (
@@ -17,7 +17,12 @@ const MainFooter = () => {
       mx="auto"
     >
       <HStack>
-        <Text fontSize={30} fontWeight={"bold"} textAlign="left">
+        <Text
+          color={"#00163E"}
+          fontSize={{ base: "20px", md: "30px", lg: "40px" }}
+          fontWeight={"bold"}
+          textAlign="left"
+        >
           Technologie
         </Text>
       </HStack>
@@ -28,23 +33,23 @@ const MainFooter = () => {
         marginRight={{ base: 2, md: 10, lg: 10 }}
       >
         <Image
-          height={{ base: "50px", md: "60px", lg: "150px" }}
+          height={{ base: "50px", md: "110px", lg: "150px" }}
           src={logoReact}
         />
         <Image
-          height={{ base: "50px", md: "80px", lg: "100px" }}
-          src={logoDoTNet}
+          height={{ base: "20px", md: "30px", lg: "50px" }}
+          src={logoPhp}
         />
         <Image
-          height={{ base: "17px", md: "50px", lg: "40px" }}
+          height={{ base: "17px", md: "30px", lg: "40px" }}
           src={logoNode}
         />
         <Image
-          height={{ base: "25px", md: "60px", lg: "60px" }}
+          height={{ base: "25px", md: "45px", lg: "60px" }}
           src={logoPython}
         />
         <Image
-          height={{ base: "20px", md: "60px", lg: "50px" }}
+          height={{ base: "20px", md: "30px", lg: "50px" }}
           src={logoAws}
         />
       </HStack>

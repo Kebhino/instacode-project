@@ -1,0 +1,101 @@
+import { Box, SimpleGrid, Text, VStack, Image } from "@chakra-ui/react";
+import logoCuprum from "@/assets/logaSlider/cuprum-logo-blue.webp";
+import logoIG from "@/assets/logaSlider/instaglass-logo-blue.webp";
+import logoZL from "@/assets/logaSlider/znanylekarz-blue.webp";
+import { motion } from "framer-motion";
+
+const MotionText = motion(Text);
+const MotionBox = motion(Box);
+
+const Realizacje = () => {
+  return (
+    <>
+      <Box bg={"white"} fontSize={{ base: "20px", md: "40px", lg: "40px" }}>
+        <VStack gap={4}>
+          <MotionText
+            fontSize={{ base: "20px", md: "30px", lg: "40px" }}
+            fontWeight="bold"
+            color="#00163E"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Realizacje
+          </MotionText>
+
+          <MotionBox
+            width="80px"
+            height="4px"
+            bg="#0099FF"
+            borderRadius="full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transformOrigin="left"
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          />
+        </VStack>
+      </Box>
+      <SimpleGrid
+        columns={{ base: 1, md: 3, lg: 3 }}
+        bg={"white"}
+        gap={3}
+        padding={{ base: 4, md: 10 }}
+        textAlign="center"
+        maxW="1200px"
+        mx="auto"
+        placeItems="center"
+      >
+        <Box bg="#F6FCFE" p={5} borderRadius={10}>
+          <VStack gap={2} align="center" marginTop={1}>
+            <Image src={logoIG} height={"40px"} />
+
+            <Text marginLeft={2} fontSize={10} marginTop={3} textAlign={"left"}>
+              Zinformatyzowaliśmy firmę ABART, obejmując naszym systemem każdy
+              aspekt działalności firmy, od automatycznych wycen poczynając, po
+              śledzenie, rozliczanie i raportowanie całego procesu instalacji
+              systemów LPG.
+            </Text>
+          </VStack>
+        </Box>
+
+        <Box
+          bg="#F6FCFE"
+          p={3}
+          borderRadius={10}
+          height={{ base: "auto", md: "auto", lg: "170px" }}
+        >
+          <VStack gap={2} align="center" marginTop={5}>
+            <Image src={logoZL} color="#00163E" height={"30px"} />
+
+            <Text marginLeft={2} fontSize={10} marginTop={4} textAlign={"left"}>
+              Największy nasz sukces to ZnanyLekarz.pl, który został w całości
+              zaprojektowany i wykonany przez nas gdy pojawił się pomysł na taki
+              serwis. Nasz projekt i wykonanie okazało się wielkim sukcesem,
+              serwis stał się bardzo popularny, a po sprzedaży odniósł ogromy
+              międzynarodowy sukces
+            </Text>
+          </VStack>
+        </Box>
+
+        <Box
+          bg="#F6FCFE"
+          p={5}
+          borderRadius={10}
+          height={{ base: "auto", md: "auto", lg: "170px" }}
+        >
+          <VStack gap={2} align="center" marginTop={3}>
+            <Image src={logoCuprum} color="#00163E" height={"40px"} />
+
+            <Text marginLeft={2} fontSize={10} marginTop={2} textAlign={"left"}>
+              Dla KGHM CUPRUM przez lata przygotowywaliśmy dedykowane
+              rozwiązania, które dbały o efektywną wymianę informacji w ramach
+              tej firmy przy jednoczesnym zapewnieniu odpowiedniej poufności.
+            </Text>
+          </VStack>
+        </Box>
+      </SimpleGrid>
+    </>
+  );
+};
+
+export default Realizacje;

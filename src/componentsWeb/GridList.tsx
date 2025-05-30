@@ -1,11 +1,10 @@
-import { Grid, GridItem, Text } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import MainSection from "./MainSection";
-import SliderComp from "./SliderComp";
 import Footer from "./FooterComp";
 import UnderMain from "./UnderMain";
 import Oferta from "./Oferta";
-import BottomGrid from "./BottomGrid";
+import Realizacje from "./Realizacje";
 import MainFooter from "./MainFooter";
 
 const GridList = () => {
@@ -25,15 +24,11 @@ const GridList = () => {
         <MainSection />
         <UnderMain />
         <Oferta />
-        <BottomGrid />
-        <MainFooter />
+        <Realizacje />
       </GridItem>
 
       <GridItem colSpan={2} bg={"white"}>
-        <Text fontSize="lg" color="#00163E" textAlign="center" mb={4}>
-          <b>Tworzyliśmy systemy dla takich firm jak:</b>
-        </Text>
-        <SliderComp />
+        <MainFooter />
       </GridItem>
       <GridItem colSpan={2} bg={"white"}>
         <Footer />
