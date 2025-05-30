@@ -14,7 +14,6 @@ const NavigationBar = () => {
       backgroundColor="white"
       borderRadius={"25px 25px 0 0"}
       boxShadow="0 2px 4px rgba(0,0,0,0.05)"
-      minH="100px"
       overflow="hidden"
       position="relative"
       px={6}
