@@ -28,6 +28,7 @@ const Realizacje = () => {
           bg="#F6FCFE"
           p={5}
           borderRadius={10}
+          boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           _hover={{
             bg: "#cce7ff",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
@@ -52,6 +53,7 @@ const Realizacje = () => {
           bg="#F6FCFE"
           p={3}
           borderRadius={10}
+          boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
           _hover={{
             bg: "#cce7ff",
@@ -77,6 +79,7 @@ const Realizacje = () => {
           bg="#F6FCFE"
           p={5}
           borderRadius={10}
+          boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
           _hover={{
             bg: "#cce7ff",

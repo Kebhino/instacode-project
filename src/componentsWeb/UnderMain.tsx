@@ -21,8 +21,14 @@ const UnderMain = () => {
       maxW="1200px"
       mx="auto"
       placeItems="center"
+      boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
+      transition="background 0.3s ease"
+      _hover={{
+        bg: "#E9F6FD",
+      }}
+      className="oferta-group"
     >
-      <Box h={"120px"}>
+      <Box h={"120px"} className="oferta-text">
         <VStack gap={2} align="center">
           <Handshake size={iconSize} color="#00163E" />
           <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>
@@ -34,7 +40,7 @@ const UnderMain = () => {
         </VStack>
       </Box>
 
-      <Box h={"120px"}>
+      <Box h={"120px"} className="oferta-text">
         <VStack gap={2} align="center">
           <ChartNoAxesCombined size={iconSize} color="#00163E" />
           <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>
@@ -46,7 +52,7 @@ const UnderMain = () => {
         </VStack>
       </Box>
 
-      <Box h={"120px"}>
+      <Box h={"120px"} className="oferta-text">
         <VStack gap={2} align="center">
           <ShieldCheck size={iconSize} color="#00163E" />
           <Text fontSize={{ base: "10px", md: "15px", lg: "20px" }}>

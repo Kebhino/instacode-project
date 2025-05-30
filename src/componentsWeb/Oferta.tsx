@@ -3,7 +3,13 @@ import SectorsTexT from "./SectorsTextComp";
 
 const Oferta = () => {
   return (
-    <Box bg="white" py={{ base: 2, md: 4 }} textAlign="center">
+    <Box
+      bg="white"
+      py={{ base: 2, md: 4 }}
+      textAlign="center"
+      className="oferta-group"
+      transition="all 0.3s ease"
+    >
       <SectorsTexT sectorname={"Oferta"} />
 
       <SimpleGrid
@@ -11,9 +17,11 @@ const Oferta = () => {
         gap={8}
         mt={10}
         px={{ base: 4, md: 20 }}
+        className="oferta-text"
       >
         <Box textAlign="center">
           <Text
+            className="oferta-text"
             fontSize={{ base: "lg", md: "xl" }}
             fontWeight="bold"
             color="#00163E"
@@ -21,7 +29,11 @@ const Oferta = () => {
           >
             Systemy produkcyjne
           </Text>
-          <Text fontSize={{ base: "sm", md: "md" }} color="gray.600">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            color="gray.600"
+            className="oferta-text"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
             repellendus.
           </Text>
