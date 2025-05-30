@@ -13,7 +13,6 @@ const MainSection = () => {
       bgColor={"#0b2b4c"}
       boxShadow="0 2px 4px rgba(0,0,0,0.05)"
     >
-      {/* Heading + opis */}
       <Stack gap={4} textAlign="left" maxW="800px" mx="10" zIndex="1">
         <Heading
           as={"h1"}

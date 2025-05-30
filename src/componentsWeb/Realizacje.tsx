@@ -24,7 +24,18 @@ const Realizacje = () => {
         mx="auto"
         placeItems="center"
       >
-        <Box bg="#F6FCFE" p={5} borderRadius={10}>
+        <Box
+          bg="#F6FCFE"
+          p={5}
+          borderRadius={10}
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+
+            transform: "scale(1.05)",
+            transition: "all 0.2s ease",
+          }}
+        >
           <VStack gap={2} align="center" marginTop={1}>
             <Image src={logoIG} height={"40px"} />
 
@@ -42,6 +53,12 @@ const Realizacje = () => {
           p={3}
           borderRadius={10}
           height={{ base: "auto", md: "auto", lg: "170px" }}
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.3s ease",
+          }}
         >
           <VStack gap={2} align="center" marginTop={5}>
             <Image src={logoZL} color="#00163E" height={"30px"} />
@@ -61,6 +78,12 @@ const Realizacje = () => {
           p={5}
           borderRadius={10}
           height={{ base: "auto", md: "auto", lg: "170px" }}
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.3s ease",
+          }}
         >
           <VStack gap={2} align="center" marginTop={3}>
             <Image src={logoCuprum} color="#00163E" height={"40px"} />

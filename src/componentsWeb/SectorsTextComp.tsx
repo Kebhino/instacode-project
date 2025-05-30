@@ -33,7 +33,8 @@ const SectorsTexT = ({ sectorname }: SectorTextProps) => {
         <MotionText
           fontSize={{ base: "20px", md: "30px", lg: "40px" }}
           fontWeight="bold"
-          color="#00163E"
+          color="
+          "
           px={4}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -28,20 +28,40 @@ const Technologie = () => {
           <Image
             height={{ base: "50px", md: "110px", lg: "150px" }}
             src={logoReact}
+            transition="transform 0.3s ease"
+            _hover={{
+              transform: "scale(1.1)",
+            }}
           />
           <Image
+            transition="transform 0.3s ease"
+            _hover={{
+              transform: "scale(1.1)",
+            }}
             height={{ base: "20px", md: "30px", lg: "50px" }}
             src={logoPhp}
           />
           <Image
+            transition="transform 0.3s ease"
+            _hover={{
+              transform: "scale(1.1)",
+            }}
             height={{ base: "17px", md: "30px", lg: "40px" }}
             src={logoNode}
           />
           <Image
+            transition="transform 0.3s ease"
+            _hover={{
+              transform: "scale(1.1)",
+            }}
             height={{ base: "25px", md: "45px", lg: "60px" }}
             src={logoPython}
           />
           <Image
+            transition="transform 0.3s ease"
+            _hover={{
+              transform: "scale(1.1)",
+            }}
             height={{ base: "20px", md: "30px", lg: "50px" }}
             src={logoAws}
           />

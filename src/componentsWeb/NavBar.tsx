@@ -24,7 +24,7 @@ const NavigationBar = () => {
         maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
         mx="auto"
         py={4}
-        px={{ base: 0, md: 4, lg: 4 }} // <-- padding lewo/prawo dla całego HStacka
+        px={{ base: 0, md: 4, lg: 4 }}
       >
         <NavLink to="/">
           <Image
@@ -33,7 +33,7 @@ const NavigationBar = () => {
             ml={{ base: 0, md: 2, lg: 4 }}
             mt={2}
             alt="InstaCode Logo"
-            cursor="pointer" // dodajemy kursor wskazujący, że to link
+            cursor="pointer"
           />
         </NavLink>
 
