@@ -42,7 +42,6 @@ const NavigationBar = () => {
             <Text
               position="relative"
               color="#00163E"
-              fontWeight="600"
               _after={{
                 content: '""',
                 position: "absolute",
@@ -62,15 +61,18 @@ const NavigationBar = () => {
                 },
               }}
             >
-              <House style={{ display: "inline", verticalAlign: "middle" }} />
+              <House
+                style={{ display: "inline", verticalAlign: "middle" }}
+                strokeWidth={1.7}
+              />
             </Text>
           </NavLink>
 
           <NavLink to="/about">
             <Text
               position="relative"
+              fontWeight={"400"}
               color="#00163E"
-              fontWeight="600"
               _after={{
                 content: '""',
                 position: "absolute",
@@ -97,8 +99,8 @@ const NavigationBar = () => {
           <NavLink to="/kontakt">
             <Text
               position="relative"
+              fontWeight={"400"}
               color="#00163E"
-              fontWeight="600"
               _after={{
                 content: '""',
                 position: "absolute",

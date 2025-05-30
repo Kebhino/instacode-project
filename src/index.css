@@ -1,7 +1,9 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    
-background-color: #00163E;
-padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #00163E;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
