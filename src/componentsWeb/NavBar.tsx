@@ -30,7 +30,6 @@ const NavigationBar = () => {
             src={LogoAS}
             height={{ base: "30px", md: "40px", lg: "50px" }}
             ml={{ base: 0, md: 2, lg: 4 }}
-            mt={2}
             alt="InstaCode Logo"
             cursor="pointer"
           />
