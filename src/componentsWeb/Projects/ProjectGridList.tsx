@@ -23,7 +23,10 @@ const ProjectGridList = () => {
           xl: "repeat(3, 1fr)",
         }}
         gap={6}
-        padding={4}
+        p={5}
+        maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
+        mx="auto"
+        bg={"white"}
       >
         {projectList.map((project, index) => (
           <ProjectCard

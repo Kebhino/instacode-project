@@ -1,3 +1,4 @@
+import FooterComp from "@/componentsWeb/FooterComp";
 import MainSection from "@/componentsWeb/MainSection";
 import NavBar from "@/componentsWeb/NavBar";
 
@@ -9,6 +10,7 @@ const RealizacjeGrid = () => {
       <NavBar />
       <MainSection />
       <ProjectGridList />
+      <FooterComp />
     </>
   );
 };
