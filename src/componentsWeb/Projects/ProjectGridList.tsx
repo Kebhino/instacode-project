@@ -24,7 +24,7 @@ const ProjectGridList = () => {
         }}
         gap={6}
         p={5}
-        maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
+        maxW={{ base: "auto", md: "1200px", lg: "1200px" }}
         mx="auto"
         bg={"white"}
       >

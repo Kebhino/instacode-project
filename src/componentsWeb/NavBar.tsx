@@ -22,13 +22,13 @@ const NavigationBar = () => {
       <HStack
         align="center"
         justify="space-between"
-        py={4}
+        py={2}
         px={{ base: 0, md: 4, lg: 4 }}
       >
         <NavLink to="/">
           <Image
             src={LogoAS}
-            height={{ base: "30px", md: "40px", lg: "50px" }}
+            height={{ base: "20px", md: "30px", lg: "40px" }}
             ml={{ base: 0, md: 2, lg: 4 }}
             alt="InstaCode Logo"
             cursor="pointer"
