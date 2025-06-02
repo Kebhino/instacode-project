@@ -38,7 +38,14 @@ const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
           h={"400px"}
         >
           <Card.Header>
-            <Image src={urlImage} alt={title} padding={3} />
+            <Image
+              maxW="200px"
+              maxH="60px"
+              mx="auto"
+              src={urlImage}
+              alt={title}
+              padding={3}
+            />
           </Card.Header>
           <Card.Body>
             <HStack
