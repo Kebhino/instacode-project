@@ -29,13 +29,19 @@ const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
         }}
       >
         <Card.Root
-          borderRadius={"2xl"}
-          boxShadow="xl"
-          size={"lg"}
-          zIndex={"tooltip"}
-          backgroundColor="white"
-          borderColor="blue.200"
-          h={"400px"}
+          borderRadius="2xl"
+          boxShadow="0 8px 20px rgba(0, 0, 0, 0.1)"
+          size="lg"
+          zIndex="tooltip"
+          backgroundColor="#F4F6FA"
+          border="1px solid rgba(144, 205, 244, 0.3)"
+          h="400px"
+          transition="all 0.3s ease" // płynna zmiana
+          _hover={{
+            backgroundColor: "#E0F4FF", // tło karty po hooverze
+            transform: "scale(1.01)", // delikatne uniesienie
+            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)", // mocniejszy cień na hover
+          }}
         >
           <Card.Header>
             <Image

@@ -41,33 +41,6 @@ const NavigationBar = () => {
           fontSize={{ base: "12px", md: "16px", lg: "18px" }}
           wrap={"wrap"}
         >
-          <NavLink to="/about">
-            <Text
-              position="relative"
-              fontWeight={"400"}
-              color="#00163E"
-              _after={{
-                content: '""',
-                position: "absolute",
-                bottom: "-2px",
-                left: 0,
-                width: "100%",
-                height: "2px",
-                background: isActive("/about")
-                  ? "linear-gradient(90deg, #6EBEFF, #3A8DFF)"
-                  : "#cce7ff",
-                opacity: isActive("/about") ? 1 : 0.4,
-                transition: "all 0.3s ease",
-              }}
-              _hover={{
-                _after: {
-                  opacity: 1,
-                },
-              }}
-            >
-              O nas
-            </Text>
-          </NavLink>
           <NavLink to="/realizacje">
             <Text
               position="relative"
@@ -93,6 +66,33 @@ const NavigationBar = () => {
               }}
             >
               Realizacje
+            </Text>
+          </NavLink>
+          <NavLink to="/about">
+            <Text
+              position="relative"
+              fontWeight={"400"}
+              color="#00163E"
+              _after={{
+                content: '""',
+                position: "absolute",
+                bottom: "-2px",
+                left: 0,
+                width: "100%",
+                height: "2px",
+                background: isActive("/about")
+                  ? "linear-gradient(90deg, #6EBEFF, #3A8DFF)"
+                  : "#cce7ff",
+                opacity: isActive("/about") ? 1 : 0.4,
+                transition: "all 0.3s ease",
+              }}
+              _hover={{
+                _after: {
+                  opacity: 1,
+                },
+              }}
+            >
+              O nas
             </Text>
           </NavLink>
 
