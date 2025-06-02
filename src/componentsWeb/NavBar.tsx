@@ -17,12 +17,12 @@ const NavigationBar = () => {
       overflow="hidden"
       position="relative"
       px={6}
+      maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
+      mx="auto"
     >
       <HStack
         align="center"
         justify="space-between"
-        maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
-        mx="auto"
         py={4}
         px={{ base: 0, md: 4, lg: 4 }}
       >
@@ -93,6 +93,33 @@ const NavigationBar = () => {
               }}
             >
               O nas
+            </Text>
+          </NavLink>
+          <NavLink to="/realizacje">
+            <Text
+              position="relative"
+              fontWeight={"400"}
+              color="#00163E"
+              _after={{
+                content: '""',
+                position: "absolute",
+                bottom: "-2px",
+                left: 0,
+                width: "100%",
+                height: "2px",
+                background: isActive("/realizacje")
+                  ? "linear-gradient(90deg, #6EBEFF, #3A8DFF)"
+                  : "#cce7ff",
+                opacity: isActive("/about") ? 1 : 0.4,
+                transition: "all 0.3s ease",
+              }}
+              _hover={{
+                _after: {
+                  opacity: 1,
+                },
+              }}
+            >
+              Realizacje
             </Text>
           </NavLink>
 

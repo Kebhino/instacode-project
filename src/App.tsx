@@ -1,8 +1,9 @@
-import GridList from "./componentsWeb/GridList";
+import GridList from "./componentsWeb/MainPage";
 import { Routes, Route } from "react-router-dom";
 
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import RealizacjeGrid from "./pages/RealizacjeGrid";
 
 function App() {
   return (
@@ -27,6 +28,15 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/realizacje"
+          element={
+            <>
+              <RealizacjeGrid />
+            </>
+          }
+        />
+
         <Route
           path="/about"
           element={

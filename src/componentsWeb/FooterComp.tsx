@@ -10,6 +10,8 @@ const Footer = () => {
       borderRadius={"0 0 25px 25px"}
       borderColor={"red"}
       overflow="hidden"
+      maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
+      mx="auto"
     >
       <Text fontSize="sm" color="#00163E">
         &copy; {new Date().getFullYear()} InstaCode. Wszystkie prawa
