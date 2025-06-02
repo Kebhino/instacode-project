@@ -18,7 +18,7 @@ const UnderMain = () => {
       bg="#F6FCFE"
       padding={{ base: 4, md: 10 }}
       textAlign="center"
-      maxW="1200px"
+      maxW={{ base: "auto", md: "auto", lg: "1200px" }}
       mx="auto"
       placeItems="center"
       boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"

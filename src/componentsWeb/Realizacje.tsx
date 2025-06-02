@@ -11,6 +11,8 @@ const Realizacje = () => {
         bg={"white"}
         fontSize={{ base: "20px", md: "40px", lg: "40px" }}
         py={{ base: 2, md: 8 }}
+        maxW={{ base: "auto", md: "auto", lg: "1200px" }}
+        mx={"auto"}
       >
         <SectorsTexT sectorname={"Realizacje"} />
       </Box>
@@ -20,7 +22,7 @@ const Realizacje = () => {
         gap={3}
         padding={{ base: 4, md: 10 }}
         textAlign="center"
-        maxW="1200px"
+        maxW={{ base: "auto", md: "1200px", lg: "1200px" }}
         mx="auto"
         placeItems="center"
       >

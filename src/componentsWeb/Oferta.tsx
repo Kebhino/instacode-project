@@ -9,6 +9,8 @@ const Oferta = () => {
       textAlign="center"
       className="oferta-group"
       transition="all 0.3s ease"
+      maxW={{ base: "auto", md: "auto", lg: "1200px" }}
+      mx={"auto"}
     >
       <SectorsTexT sectorname={"Oferta"} />
 

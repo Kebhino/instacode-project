@@ -5,7 +5,6 @@ const MainSection = () => {
   return (
     <Box
       p={{ base: 4, md: 8 }}
-      maxW="1200px"
       minH={{ base: "200px", md: "300px", lg: "400px" }}
       bgImage={`url(${bgImage})`}
       position="relative"
@@ -13,6 +12,7 @@ const MainSection = () => {
       bgColor={"#0b2b4c"}
       boxShadow="0 2px 4px rgba(0,0,0,0.05)"
       mx="auto"
+      maxW={{ base: "auto", md: "auto", lg: "1200px" }}
     >
       <Stack gap={4} textAlign="left" maxW="800px" mx="10" zIndex="1">
         <Heading

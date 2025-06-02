@@ -16,7 +16,7 @@ const Technologie = () => {
         bg="white"
         px={{ base: 4, md: 10 }}
         textAlign="left"
-        maxW="1200px"
+        maxW={{ base: "auto", md: "auto", lg: "1200px" }}
         mx="auto"
       >
         <HStack

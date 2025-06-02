@@ -16,7 +16,7 @@ const NavigationBar = () => {
       overflow="hidden"
       position="relative"
       px={6}
-      maxW={{ base: "420px", md: "1200px", lg: "1200px" }}
+      maxW={{ base: "auto", md: "auto", lg: "1200px" }}
       mx="auto"
     >
       <HStack
