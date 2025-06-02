@@ -36,7 +36,11 @@ const NavigationBar = () => {
           />
         </NavLink>
 
-        <HStack gap={6}>
+        <HStack
+          gap={4}
+          fontSize={{ base: "12px", md: "16px", lg: "18px" }}
+          wrap={"wrap"}
+        >
           <NavLink to="/about">
             <Text
               position="relative"
