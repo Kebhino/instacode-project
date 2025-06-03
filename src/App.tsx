@@ -1,4 +1,4 @@
-import GridList from "./componentsWeb/MainPage";
+import MainPage from "./componentsWeb/MainPage";
 import { Routes, Route } from "react-router-dom";
 
 import Contact from "./pages/Contact";
@@ -14,7 +14,7 @@ function App() {
           path="/"
           element={
             <>
-              <GridList />
+              <MainPage />
             </>
           }
         />

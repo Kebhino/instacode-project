@@ -16,6 +16,7 @@ const Realizacje = () => {
       >
         <SectorsTexT sectorname={"Realizacje"} />
       </Box>
+
       <SimpleGrid
         columns={{ base: 1, md: 3, lg: 3 }}
         bg={"white"}
@@ -26,6 +27,7 @@ const Realizacje = () => {
         mx="auto"
         placeItems="center"
       >
+        {/* // TODO: Loga wrzucic w boxa i ustawić wysokosc zeby nie bawic się marginesami*/}
         <Box
           bg="#F6FCFE"
           p={5}

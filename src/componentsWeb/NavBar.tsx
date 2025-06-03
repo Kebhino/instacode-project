@@ -28,8 +28,8 @@ const NavigationBar = () => {
         <NavLink to="/">
           <Image
             src={LogoAS}
-            height={{ base: "20px", md: "30px", lg: "40px" }}
-            ml={{ base: 0, md: 2, lg: 4 }}
+            height={{ base: "20px", md: "25px", lg: "35px" }}
+            ml={{ base: 0, md: 2, lg: 2 }}
             alt="InstaCode Logo"
             cursor="pointer"
           />

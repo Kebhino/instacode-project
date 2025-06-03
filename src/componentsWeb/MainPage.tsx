@@ -7,34 +7,34 @@ import Oferta from "./Oferta";
 import Realizacje from "./Realizacje";
 import Technologie from "./Technologie";
 
-const GridList = () => {
+const MainPage = () => {
   return (
     <Grid
       templateRows="auto 1fr auto auto"
-      templateColumns={{ base: "1fr", md: "1fr" }}
+      templateColumns={"1fr"}
       minH="100vh"
       maxW={"1200px"}
       mx={"auto"}
       justifyContent={"center"}
     >
-      <GridItem colSpan={2}>
+      <GridItem>
         <NavigationBar />
       </GridItem>
-      <GridItem color={"black"} colSpan={2}>
+      <GridItem color={"black"}>
         <MainSection />
         <UnderMain />
         <Oferta />
         <Realizacje />
       </GridItem>
 
-      <GridItem colSpan={2} bg={"white"}>
+      <GridItem bg={"white"}>
         <Technologie />
       </GridItem>
-      <GridItem colSpan={2} bg="#00163E">
+      <GridItem bg="#00163E">
         <Footer />
       </GridItem>
     </Grid>
   );
 };
 
-export default GridList;
+export default MainPage;
