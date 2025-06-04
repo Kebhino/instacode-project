@@ -1,9 +1,37 @@
-import { Box, Heading, VStack, Text } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
+import ProjectCard from "./Projects/ProjectCard";
+import { Contact } from 'lucide-react';
+
+
 
 const ContacElement = () => {
   return (
     <>
-      <Box
+
+    <Grid
+        templateColumns={{
+          base: "1fr",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(3, 1fr)",
+        }}
+        gap={6}
+        p={5}
+        maxW={{ base: "auto", md: "1200px", lg: "1200px" }}
+        mx="auto"
+        bg={"white"}
+      >
+        
+          <ProjectCard
+            
+            description={"project.description"}
+            urlImage={Contact}
+            key={"karta kontakt"}
+            
+          />
+        
+      </Grid>
+      {/* <Box
         p={8}
         bg={"white"}
         display="flex"
@@ -46,7 +74,7 @@ const ContacElement = () => {
             </Text>
           </VStack>
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };

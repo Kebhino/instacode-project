@@ -1,16 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
-
 import projectList from "@/data/loga/projects";
 
-// interface ProjectCardProps {
-//   title: string;
-//   description: string;
-//   urlImage: string;
-//   git?: string;
-//   urlSite: string;
-//   id?: string;
-// }
 
 const ProjectGridList = () => {
   return (
@@ -30,7 +21,7 @@ const ProjectGridList = () => {
       >
         {projectList.map((project, index) => (
           <ProjectCard
-            title={project.title}
+            
             description={project.description}
             urlImage={project.urlImage}
             key={index}

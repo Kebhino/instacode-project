@@ -9,9 +9,9 @@ import {
 } from "@chakra-ui/react";
 
 interface ProjectCardProps {
-  title: string;
+  title?: string;
   description: string;
-  urlImage: string;
+  urlImage: string | React.FC<React.SVGProps<SVGSVGElement>>
   url?: string;
   git?: string;
   id?: string;
@@ -67,7 +67,7 @@ const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
                 marginBottom={2}
                 color={"black"}
               >
-                {/* {title} */} JAKIŚ TYTUŁ PROJEKTU?
+                
               </Text>
               <Spacer />
             </HStack>
