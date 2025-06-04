@@ -1,14 +1,11 @@
 import { Grid } from "@chakra-ui/react";
 import ProjectCard from "./Projects/ProjectCard";
-import { Contact } from 'lucide-react';
-
-
+import { Contact } from "lucide-react";
 
 const ContacElement = () => {
   return (
     <>
-
-    <Grid
+      <Grid
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
@@ -21,15 +18,11 @@ const ContacElement = () => {
         mx="auto"
         bg={"white"}
       >
-        
-          <ProjectCard
-            
-            description={"project.description"}
-            urlImage={Contact}
-            key={"karta kontakt"}
-            
-          />
-        
+        <ProjectCard
+          description={"project.description"}
+          icon={Contact}
+          key={"karta kontakt"}
+        />
       </Grid>
       {/* <Box
         p={8}

@@ -7,17 +7,24 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
+import { Contact } from "lucide-react";
 
 interface ProjectCardProps {
   title?: string;
   description: string;
-  urlImage: string | React.FC<React.SVGProps<SVGSVGElement>>
+  urlImage?: string;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   url?: string;
   git?: string;
   id?: string;
 }
 
-const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  urlImage,
+  icon,
+}: ProjectCardProps) => {
   return (
     <GridItem marginBottom={5}>
       <Box
@@ -44,14 +51,18 @@ const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
           }}
         >
           <Card.Header>
-            <Image
-              maxW="200px"
-              maxH="60px"
-              mx="auto"
-              src={urlImage}
-              alt={title}
-              padding={3}
-            />
+            {icon ? (
+              <Contact color="black" size={50} />
+            ) : urlImage ? (
+              <Image
+                maxW="200px"
+                maxH="60px"
+                mx="auto"
+                src={urlImage}
+                alt={title}
+                padding={3}
+              />
+            ) : null}
           </Card.Header>
           <Card.Body>
             <HStack
@@ -66,9 +77,7 @@ const ProjectCard = ({ title, description, urlImage }: ProjectCardProps) => {
                 textAlign={"center"}
                 marginBottom={2}
                 color={"black"}
-              >
-                
-              </Text>
+              ></Text>
               <Spacer />
             </HStack>
 
