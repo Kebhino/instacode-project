@@ -59,7 +59,7 @@ const ContacElement = () => {
 
             <HStack mt={5}>
               <Send size={20} color="black" />
-              <Text ml={1} color={"blue"} fontWeight={"semibold"}>
+              <Text ml={2} color={"blue"} fontWeight={"semibold"}>
                 biuro@elemel.pl
               </Text>
             </HStack>

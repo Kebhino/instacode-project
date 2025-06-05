@@ -1,4 +1,4 @@
-import { Box, Card, GridItem, Image, Spacer, Text } from "@chakra-ui/react";
+import { Box, Card, GridItem, Image, Spacer } from "@chakra-ui/react";
 
 import React from "react";
 

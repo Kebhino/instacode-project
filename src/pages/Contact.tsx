@@ -10,7 +10,7 @@ const Contact = () => {
       <Grid
         templateRows="auto auto 1fr auto"
         templateColumns={"1fr"}
-        minH="100vh"
+        minH="auto"
         maxW={"1200px"}
         mx={"auto"}
         justifyContent={"center"}
@@ -22,10 +22,10 @@ const Contact = () => {
           <MainSection />
         </GridItem>
 
-        <GridItem bg={"white"}>
+        <GridItem>
           <ContacElement />
         </GridItem>
-        <GridItem bg="#00163E">
+        <GridItem>
           <Footer />
         </GridItem>
       </Grid>
