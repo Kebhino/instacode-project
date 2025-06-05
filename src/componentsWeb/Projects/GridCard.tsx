@@ -2,7 +2,7 @@ import { Grid } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectList from "@/data/loga/projects";
 
-const ProjectGridList = () => {
+const GridCard = () => {
   return (
     <>
       <Grid
@@ -28,4 +28,4 @@ const ProjectGridList = () => {
   );
 };
 
-export default ProjectGridList;
+export default GridCard;

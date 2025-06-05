@@ -1,7 +1,7 @@
 import Footer from "@/componentsWeb/FooterComp";
 import MainSection from "@/componentsWeb/MainSection";
 import NavigationBar from "@/componentsWeb/NavBar";
-import ProjectGridList from "@/componentsWeb/Projects/ProjectGridList";
+import GridCard from "@/componentsWeb/Projects/GridCard";
 
 import { Grid, GridItem } from "@chakra-ui/react";
 
@@ -21,7 +21,7 @@ const RealizacjeGrid = () => {
         </GridItem>
         <GridItem>
           <MainSection />
-          <ProjectGridList />
+          <GridCard />
         </GridItem>
 
         <GridItem bg={"white"}></GridItem>
