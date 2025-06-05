@@ -72,7 +72,7 @@ const ContacElement = () => {
             </HStack>
           </VStack>
         </ProjectCard>
-        <ProjectCard icon={Mail} key={"karta kontakt2"}>
+        <ProjectCard icon={Mail} key={"karta kontakt3"}>
           <Text>Pusta karta</Text>
         </ProjectCard>
       </Grid>
