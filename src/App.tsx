@@ -34,16 +34,18 @@ function App() {
           <Route
             path="/kontakt"
             element={
-              <Grid
-                templateRows="auto 1fr auto auto"
-                templateColumns={"1fr"}
-                minH="auto"
-                maxW={"1200px"}
-                mx={"auto"}
-                justifyContent={"center"}
-              >
-                <Contact />
-              </Grid>
+              <>
+                <Grid
+                  templateRows="auto 1fr auto auto"
+                  templateColumns={"1fr"}
+                  minH="auto"
+                  maxW={"1200px"}
+                  mx={"auto"}
+                  justifyContent={"center"}
+                >
+                  <Contact />
+                </Grid>
+              </>
             }
           />
           <Route
@@ -57,8 +59,9 @@ function App() {
                   maxW={"1200px"}
                   mx={"auto"}
                   justifyContent={"center"}
-                ></Grid>
-                <RealizacjeGrid />
+                >
+                  <RealizacjeGrid />
+                </Grid>
               </>
             }
           />

@@ -9,11 +9,15 @@ const ContacElement = () => {
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(3, 1fr)",
         }}
         gap={6}
         p={5}
-        bg="white"
+        maxW="1200px"
         w="100%"
+        mx="auto"
+        bg={"white"}
       >
         <ProjectCard icon={Building} key={"karta kontakt"}>
           <VStack align="start" gap={3} color="gray.700">
@@ -67,6 +71,9 @@ const ContacElement = () => {
               </Text>
             </HStack>
           </VStack>
+        </ProjectCard>
+        <ProjectCard icon={Mail} key={"karta kontakt2"}>
+          <Text>Pusta karta</Text>
         </ProjectCard>
       </Grid>
     </>

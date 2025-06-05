@@ -14,7 +14,8 @@ const GridCard = () => {
         }}
         gap={6}
         p={5}
-        maxW={{ base: "auto", md: "1200px", lg: "1200px" }}
+        maxW="1200px"
+        w="100%"
         mx="auto"
         bg={"white"}
       >

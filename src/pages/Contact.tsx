@@ -13,9 +13,9 @@ const Contact = () => {
       <GridItem>
         <MainSection />
       </GridItem>
-
-      <ContacElement />
-
+      <GridItem>
+        <ContacElement />
+      </GridItem>
       <GridItem>
         <Footer />
       </GridItem>
