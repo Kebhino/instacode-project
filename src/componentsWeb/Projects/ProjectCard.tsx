@@ -22,6 +22,7 @@ const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
           transform: "scale(1.01)",
           transition: "all 0.1s ease",
         }}
+        border="2px solid green"
       >
         <Card.Root
           borderRadius="2xl"
