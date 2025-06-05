@@ -21,11 +21,12 @@ const RealizacjeGrid = () => {
         </GridItem>
         <GridItem>
           <MainSection />
-          <GridCard />
         </GridItem>
 
-        <GridItem bg={"white"}></GridItem>
-        <GridItem bg="#00163E">
+        <GridItem>
+          <GridCard />
+        </GridItem>
+        <GridItem>
           <Footer />
         </GridItem>
       </Grid>

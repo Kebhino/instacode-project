@@ -1,12 +1,4 @@
-import {
-  Box,
-  Card,
-  GridItem,
-  HStack,
-  Image,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Card, GridItem, Image, Spacer, Text } from "@chakra-ui/react";
 
 import React from "react";
 
@@ -51,8 +43,8 @@ const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
               <Box display="flex" justifyContent="center">
                 {React.createElement(icon, {
                   color: "black",
-                  width: 50,
-                  height: 50,
+                  width: 75,
+                  height: 75,
                 })}
               </Box>
             ) : urlImage ? (
@@ -66,26 +58,8 @@ const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
               />
             ) : null}
           </Card.Header>
-          <Card.Body>
-            <HStack
-              justifyContent={"space-between"}
-              marginBottom={2}
-              alignItems={"center"}
-            >
-              <Text
-                marginY={2}
-                fontSize="lg"
-                fontWeight="bold"
-                textAlign={"center"}
-                marginBottom={2}
-                color={"black"}
-              ></Text>
-              <Spacer />
-            </HStack>
-
-            <Box fontSize={"sm"} color="gray.700" p={4} borderRadius="lg">
-              {children}
-            </Box>
+          <Card.Body mt={5} color="black" fontSize={"sm"}>
+            {children}
           </Card.Body>
           <Card.Footer
             justifyContent={"space-between"}

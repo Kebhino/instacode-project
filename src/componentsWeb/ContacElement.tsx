@@ -1,6 +1,6 @@
-import { Grid, HStack, VStack, Text } from "@chakra-ui/react";
+import { Grid, HStack, VStack, Text, Box } from "@chakra-ui/react";
 import ProjectCard from "./Projects/ProjectCard";
-import { Box, Contact, InfoIcon } from "lucide-react";
+import { Building, InfoIcon, Mail, Send, Phone } from "lucide-react";
 
 const ContacElement = () => {
   return (
@@ -18,7 +18,7 @@ const ContacElement = () => {
         mx="auto"
         bg={"white"}
       >
-        <ProjectCard icon={Contact} key={"karta kontakt"}>
+        <ProjectCard icon={Building} key={"karta kontakt"}>
           <VStack align="start" gap={3} color="gray.700">
             <HStack gap={2}>
               <InfoIcon size={20} color="black" />
@@ -27,19 +27,19 @@ const ContacElement = () => {
               </Text>
             </HStack>
 
-            <Box>
-              <Text fontSize="lg" fontWeight="bold" color="black">
+            <Box p={4} borderRadius="md">
+              <Text fontSize="lg" fontWeight="bold" color="gray.700">
                 Elemel Sp. z o.o.
               </Text>
 
-              <Text fontSize="sm" color="gray.600">
+              <Text fontSize="sm" color="gray.700">
                 KRS:{" "}
                 <Text as="span" fontWeight="semibold" color="black">
                   0001147774
                 </Text>
               </Text>
 
-              <Text fontSize="sm" color="gray.600">
+              <Text fontSize="sm" color="gray.700">
                 NIP:{" "}
                 <Text as="span" fontWeight="semibold" color="black">
                   8961647310
@@ -48,51 +48,30 @@ const ContacElement = () => {
             </Box>
           </VStack>
         </ProjectCard>
-      </Grid>
-      {/* <Box
-        p={8}
-        bg={"white"}
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        maxW={{ base: "auto", md: "auto", lg: "1200px" }}
-        mx="auto"
-      >
-        <Box
-          bg="whiteAlpha.800"
-          backdropFilter="blur(10px)"
-          p={8}
-          borderRadius="lg"
-          maxW="600px"
-          textAlign="center"
-          boxShadow="lg"
-        >
-          <Heading size="lg" mb={4} color="blue.500">
-            Właścicielem marki InstaCode jest Elemel Sp. z o.o. KRS 0001147774
-            NIP 8961647310
-          </Heading>
-          <VStack gap={4}>
-            <Text fontSize="lg" color="gray.700">
-              Masz pytania? Chcesz z nami współpracować?
-            </Text>
-            <Text fontSize="lg" color="gray.700">
-              Napisz na maila:{" "}
-              <Box as="span" fontWeight="bold" color="blue.500">
+        <ProjectCard icon={Mail} key={"karta kontakt"}>
+          <VStack align="start" gap={3} color="gray.700">
+            <HStack>
+              <InfoIcon size={20} color="black" />
+              <Text fontWeight="semibold" fontSize="md" color={"gray.700"}>
+                Masz pytania? Skontaktuj się z nami!
+              </Text>
+            </HStack>
+
+            <HStack mt={5}>
+              <Send size={20} color="black" />
+              <Text ml={1} color={"blue"} fontWeight={"semibold"}>
                 biuro@elemel.pl
-              </Box>
-            </Text>
-            <Text fontSize="lg" color="gray.700">
-              Lub zadzwoń:{" "}
-              <Box as="span" fontWeight="bold" color="blue.500">
-                tel: +48 509 96 767 23
-              </Box>
-            </Text>
-            <Text fontSize="lg" color="gray.700" fontStyle="italic">
-              InstaCode - Innowacja zakodowana w każdej linii.
-            </Text>
+              </Text>
+            </HStack>
+            <HStack mt={2}>
+              <Phone size={20} color="black" />
+              <Text ml={1} color={"blue"} fontWeight={"semibold"}>
+                +48 509 96 767 23
+              </Text>
+            </HStack>
           </VStack>
-        </Box>
-      </Box> */}
+        </ProjectCard>
+      </Grid>
     </>
   );
 };
