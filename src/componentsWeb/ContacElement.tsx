@@ -1,6 +1,6 @@
-import { Grid } from "@chakra-ui/react";
+import { Grid, HStack, VStack, Text } from "@chakra-ui/react";
 import ProjectCard from "./Projects/ProjectCard";
-import { Contact } from "lucide-react";
+import { Box, Contact, InfoIcon } from "lucide-react";
 
 const ContacElement = () => {
   return (
@@ -9,8 +9,8 @@ const ContacElement = () => {
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
-          xl: "repeat(3, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
         }}
         gap={6}
         p={5}
@@ -18,11 +18,36 @@ const ContacElement = () => {
         mx="auto"
         bg={"white"}
       >
-        <ProjectCard
-          description={"project.description"}
-          icon={Contact}
-          key={"karta kontakt"}
-        />
+        <ProjectCard icon={Contact} key={"karta kontakt"}>
+          <VStack align="start" gap={3} color="gray.700">
+            <HStack gap={2}>
+              <InfoIcon size={20} color="black" />
+              <Text fontWeight="semibold" fontSize="md">
+                Właściciel marki InstaCode
+              </Text>
+            </HStack>
+
+            <Box>
+              <Text fontSize="lg" fontWeight="bold" color="black">
+                Elemel Sp. z o.o.
+              </Text>
+
+              <Text fontSize="sm" color="gray.600">
+                KRS:{" "}
+                <Text as="span" fontWeight="semibold" color="black">
+                  0001147774
+                </Text>
+              </Text>
+
+              <Text fontSize="sm" color="gray.600">
+                NIP:{" "}
+                <Text as="span" fontWeight="semibold" color="black">
+                  8961647310
+                </Text>
+              </Text>
+            </Box>
+          </VStack>
+        </ProjectCard>
       </Grid>
       {/* <Box
         p={8}

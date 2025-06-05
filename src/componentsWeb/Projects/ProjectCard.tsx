@@ -7,24 +7,20 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import { Contact } from "lucide-react";
+
+import React from "react";
 
 interface ProjectCardProps {
-  title?: string;
-  description: string;
-  urlImage?: string;
-  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
-  url?: string;
+  children?: React.ReactNode;
   git?: string;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   id?: string;
+  title?: string;
+  url?: string;
+  urlImage?: string;
 }
 
-const ProjectCard = ({
-  title,
-  description,
-  urlImage,
-  icon,
-}: ProjectCardProps) => {
+const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
   return (
     <GridItem marginBottom={5}>
       <Box
@@ -52,7 +48,13 @@ const ProjectCard = ({
         >
           <Card.Header>
             {icon ? (
-              <Contact color="black" size={50} />
+              <Box display="flex" justifyContent="center">
+                {React.createElement(icon, {
+                  color: "black",
+                  width: 50,
+                  height: 50,
+                })}
+              </Box>
             ) : urlImage ? (
               <Image
                 maxW="200px"
@@ -81,9 +83,9 @@ const ProjectCard = ({
               <Spacer />
             </HStack>
 
-            <Text fontSize="sm" color="gray.500">
-              {description}
-            </Text>
+            <Box fontSize={"sm"} color="gray.700" p={4} borderRadius="lg">
+              {children}
+            </Box>
           </Card.Body>
           <Card.Footer
             justifyContent={"space-between"}

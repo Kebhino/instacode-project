@@ -6,7 +6,7 @@ import imageInstaGlass from "@/assets/logaSlider/instaglass-logo-blue.webp"
 import imageInstaCode from "@/assets//logo-nowe.webp"
 
 export interface Project {
-  title: string;    
+    title: string;    
     description: string;
     urlImage: string;
     id: string;
