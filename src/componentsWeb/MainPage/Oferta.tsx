@@ -11,6 +11,8 @@ const Oferta = () => {
       transition="all 0.3s ease"
       maxW="1200px"
       mx={"auto"}
+      pt={5}
+      pb={5}
     >
       <SectorsTexT sectorname={"Oferta"} />
 
