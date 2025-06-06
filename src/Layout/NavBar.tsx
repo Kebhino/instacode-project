@@ -1,6 +1,6 @@
 import LogoAS from "@/assets/logo-nowe-black.webp";
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
-import { NavLink } from "./NavLink";
+import { NavLink } from "../componentsWeb/NavLink";
 import { useLocation } from "react-router-dom";
 
 const NavigationBar = () => {

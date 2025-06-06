@@ -1,7 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 
 interface LayoutProps {
   children?: React.ReactNode;

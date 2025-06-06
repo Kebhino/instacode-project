@@ -1,5 +1,5 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import SectorsTexT from "./SectorsTextComp";
+import SectorsTexT from "./OfertaTextComp";
 
 const Oferta = () => {
   return (

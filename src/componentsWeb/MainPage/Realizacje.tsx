@@ -2,7 +2,7 @@ import { Box, SimpleGrid, Text, VStack, Image, Center } from "@chakra-ui/react";
 import logoCuprum from "@/assets/logaSlider/cuprum-logo-blue.webp";
 import logoIG from "@/assets/logaSlider/abartlogo-blue.webp";
 import logoZL from "@/assets/logaSlider/znanylekarz-blue.webp";
-import SectorsTexT from "./SectorsTextComp";
+import SectorsTexT from "./OfertaTextComp";
 
 const Realizacje = () => {
   return (

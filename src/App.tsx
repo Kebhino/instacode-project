@@ -1,10 +1,9 @@
-import MainPage from "./componentsWeb/MainPage";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./componentsWeb/MainPage/MainPage";
 
-import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import RealizacjeGrid from "./pages/RealizacjeGrid";
-import { Grid } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -25,17 +24,7 @@ function App() {
           path="/kontakt"
           element={
             <>
-              <Grid
-                templateRows="auto 1fr auto auto"
-                templateColumns={"1fr"}
-                minH="auto"
-                maxW={"1200px"}
-                mx={"auto"}
-                justifyContent={"center"}
-                w={"100%"}
-              >
-                <Contact />
-              </Grid>
+              <Contact />
             </>
           }
         />
@@ -43,17 +32,7 @@ function App() {
           path="/realizacje"
           element={
             <>
-              <Grid
-                templateRows="auto 1fr auto auto"
-                templateColumns={"1fr"}
-                minH="auto"
-                maxW={"1200px"}
-                mx={"auto"}
-                justifyContent={"center"}
-                w={"100%"}
-              >
-                <RealizacjeGrid />
-              </Grid>
+              <RealizacjeGrid />
             </>
           }
         />
@@ -62,17 +41,7 @@ function App() {
           path="/about"
           element={
             <>
-              <Grid
-                templateRows="auto 1fr auto auto"
-                templateColumns={"1fr"}
-                minH="auto"
-                maxW={"1200px"}
-                mx={"auto"}
-                justifyContent={"center"}
-                w={"100%"}
-              >
-                <About />
-              </Grid>
+              <About />
             </>
           }
         />

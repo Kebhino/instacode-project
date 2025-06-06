@@ -4,7 +4,7 @@ import logoPython from "@/assets/techonologieLoga/python-logo.webp";
 import logoNode from "@/assets/techonologieLoga/nodejs.webp";
 import logoAws from "@/assets/techonologieLoga/amazon-logo.webp";
 import logoPhp from "@/assets/logaSlider/php-logo-blue.webp";
-import SectorsTexT from "./SectorsTextComp";
+import SectorsTexT from "./OfertaTextComp";
 
 const Technologie = () => {
   return (

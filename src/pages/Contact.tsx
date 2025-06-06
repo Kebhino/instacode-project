@@ -1,24 +1,12 @@
 import ContactMain from "@/componentsWeb/ContactMain";
-import Footer from "@/componentsWeb/Footer";
-import Hero from "@/componentsWeb/Hero";
-import NavigationBar from "@/componentsWeb/NavBar";
-import { GridItem } from "@chakra-ui/react";
+import Layout from "@/Layout/Layout";
 
 const Contact = () => {
   return (
     <>
-      <GridItem>
-        <NavigationBar />
-      </GridItem>
-      <GridItem>
-        <Hero />
-      </GridItem>
-      <GridItem>
+      <Layout>
         <ContactMain />
-      </GridItem>
-      <GridItem>
-        <Footer />
-      </GridItem>
+      </Layout>
     </>
   );
 };

@@ -1,26 +1,12 @@
-import Footer from "@/componentsWeb/Footer";
-import Hero from "@/componentsWeb/Hero";
-import NavigationBar from "@/componentsWeb/NavBar";
+import Layout from "@/Layout/Layout";
 import RealizacjeMain from "@/componentsWeb/RealizacjeMain";
-
-import { GridItem } from "@chakra-ui/react";
 
 const RealizacjeGrid = () => {
   return (
     <>
-      <GridItem>
-        <NavigationBar />
-      </GridItem>
-      <GridItem>
-        <Hero />
-      </GridItem>
-
-      <GridItem>
+      <Layout>
         <RealizacjeMain />
-      </GridItem>
-      <GridItem>
-        <Footer />
-      </GridItem>
+      </Layout>
     </>
   );
 };
