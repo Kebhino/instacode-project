@@ -10,8 +10,8 @@ const Hero = () => {
       p={{ base: 4, md: 8 }}
       minH={{ base: "200px", md: "300px", lg: "400px" }}
       bgImage={{
-        base: `url(${bgImageMobile})`,
-        md: `url(${bgImageMd})`,
+        base: `url(${bgImageMd})`,
+        md: `url(${bgImage})`,
         lg: `url(${bgImage})`,
       }}
       position="relative"
