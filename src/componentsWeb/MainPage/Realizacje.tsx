@@ -20,6 +20,7 @@ const Realizacje = () => {
       <SimpleGrid
         columns={{ base: 1, md: 3, lg: 3 }}
         bg={"white"}
+        color={"#00163E"}
         gap={3}
         padding={{ base: 4, md: 10 }}
         textAlign="center"

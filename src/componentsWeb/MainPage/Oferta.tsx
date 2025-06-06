@@ -11,8 +11,7 @@ const Oferta = () => {
       transition="all 0.3s ease"
       maxW="1200px"
       mx={"auto"}
-      pt={5}
-      pb={5}
+      pt={10}
     >
       <SectorsTexT sectorname={"Oferta"} />
 
@@ -26,6 +25,7 @@ const Oferta = () => {
         className="oferta-text"
         borderRadius={10}
         boxShadow="20px 20px 100px rgba(106, 173, 255, 0.1)"
+        pb={10}
       >
         <Box textAlign="center" lineHeight="1.6" mb={4}>
           <Text
