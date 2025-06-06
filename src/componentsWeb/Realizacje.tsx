@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, Text, VStack, Image } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, VStack, Image, Center } from "@chakra-ui/react";
 import logoCuprum from "@/assets/logaSlider/cuprum-logo-blue.webp";
 import logoIG from "@/assets/logaSlider/abartlogo-blue.webp";
 import logoZL from "@/assets/logaSlider/znanylekarz-blue.webp";
@@ -28,31 +28,8 @@ const Realizacje = () => {
         placeItems="center"
       >
         {/* // TODO: Loga wrzucic w boxa i ustawić wysokosc zeby nie bawic się marginesami*/}
-        <Box
-          bg="#F6FCFE"
-          p={5}
-          borderRadius={10}
-          boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
-          _hover={{
-            bg: "#cce7ff",
-            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
 
-            transform: "scale(1.05)",
-            transition: "all 0.2s ease",
-          }}
-        >
-          <VStack gap={2} align="center" marginTop={1}>
-            <Image src={logoIG} height={"40px"} />
-
-            <Text marginLeft={2} fontSize={10} marginTop={3} textAlign={"left"}>
-              Zinformatyzowaliśmy firmę ABART, obejmując naszym systemem każdy
-              aspekt działalności firmy, od automatycznych wycen poczynając, po
-              śledzenie, rozliczanie i raportowanie całego procesu instalacji
-              systemów LPG.
-            </Text>
-          </VStack>
-        </Box>
-
+        {/* Znany Lekarz */}
         <Box
           bg="#F6FCFE"
           p={3}
@@ -66,10 +43,13 @@ const Realizacje = () => {
             transition: "all 0.3s ease",
           }}
         >
-          <VStack gap={2} align="center" marginTop={5}>
-            <Image src={logoZL} color="#00163E" height={"30px"} />
+          <VStack gap={2} align="center" marginTop={1}>
+            <Center height={"40px"} w={"100%"}>
+              {/* Logo Znany Lekarz */}
+              <Image src={logoZL} height={"32px"} />
+            </Center>
 
-            <Text marginLeft={2} fontSize={10} marginTop={4} textAlign={"left"}>
+            <Text marginLeft={2} marginTop={2} fontSize={10} textAlign={"left"}>
               Największy nasz sukces to ZnanyLekarz.pl, który został w całości
               zaprojektowany i wykonany przez nas gdy pojawił się pomysł na taki
               serwis. Nasz projekt i wykonanie okazało się wielkim sukcesem,
@@ -78,10 +58,10 @@ const Realizacje = () => {
             </Text>
           </VStack>
         </Box>
-
+        {/* Cuprum */}
         <Box
           bg="#F6FCFE"
-          p={5}
+          p={3}
           borderRadius={10}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
@@ -92,13 +72,41 @@ const Realizacje = () => {
             transition: "all 0.3s ease",
           }}
         >
-          <VStack gap={2} align="center" marginTop={3}>
-            <Image src={logoCuprum} color="#00163E" height={"40px"} />
+          <VStack gap={2} align="center" marginTop={1}>
+            <Center height={"40px"} w={"100%"}>
+              <Image src={logoCuprum} height={"40px"} />
+            </Center>
 
-            <Text marginLeft={2} fontSize={10} marginTop={2} textAlign={"left"}>
+            <Text marginLeft={2} marginTop={2} fontSize={10} textAlign={"left"}>
               Dla KGHM CUPRUM przez lata przygotowywaliśmy dedykowane
               rozwiązania, które dbały o efektywną wymianę informacji w ramach
               tej firmy przy jednoczesnym zapewnieniu odpowiedniej poufności.
+            </Text>
+          </VStack>
+        </Box>
+
+        {/* ABART */}
+        <Box
+          bg="#F6FCFE"
+          p={3}
+          borderRadius={10}
+          boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
+          height={{ base: "auto", md: "auto", lg: "170px" }}
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.2s ease",
+          }}
+        >
+          <VStack gap={2} align="center" marginTop={1}>
+            <Image src={logoIG} height={"40px"} />
+
+            <Text marginLeft={2} fontSize={10} marginTop={2} textAlign={"left"}>
+              Zinformatyzowaliśmy firmę ABART, obejmując naszym systemem każdy
+              aspekt działalności firmy, od automatycznych wycen poczynając, po
+              śledzenie, rozliczanie i raportowanie całego procesu instalacji
+              systemów LPG.
             </Text>
           </VStack>
         </Box>

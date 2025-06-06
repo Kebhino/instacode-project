@@ -1,11 +1,11 @@
 import { GridItem } from "@chakra-ui/react";
-import Footer from "./FooterComp";
-import MainSection from "./MainSection";
+import Footer from "./Footer";
+import Hero from "./Hero";
 import NavigationBar from "./NavBar";
 import Oferta from "./Oferta";
 import Realizacje from "./Realizacje";
 import Technologie from "./Technologie";
-import UnderMain from "./UnderMain";
+import UnderHero from "./UnderHero";
 
 const MainPage = () => {
   return (
@@ -14,9 +14,9 @@ const MainPage = () => {
         <NavigationBar />
       </GridItem>
       <GridItem color={"black"}>
-        <MainSection />
+        <Hero />
 
-        <UnderMain />
+        <UnderHero />
         <Oferta />
         <Realizacje />
       </GridItem>

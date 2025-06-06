@@ -1,16 +1,16 @@
 import { Grid } from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./Projects/ProjectCard";
 import projectList from "@/data/loga/projects";
 
-const GridCard = () => {
+const RealizacjeMain = () => {
   return (
     <>
       <Grid
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
-          lg: "repeat(2, 1fr)",
-          xl: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(3, 1fr)",
         }}
         gap={6}
         p={5}
@@ -29,4 +29,4 @@ const GridCard = () => {
   );
 };
 
-export default GridCard;
+export default RealizacjeMain;

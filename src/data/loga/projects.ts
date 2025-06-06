@@ -14,38 +14,38 @@ export interface Project {
 
 const projectList = [{
     title: "ZnanyLekarz",
-    description: "ZnanyLekarz is a leading platform in Poland for finding and booking medical appointments online. It connects patients with healthcare professionals, offering a wide range of services from general practitioners to specialists.",
+    description: "Nasz największy sukces to ZnanyLekarz.pl, który został w całości zaprojektowany i wykonany przez nas, gdy pojawił się pomysł na taki serwis. Nasz projekt i wykonanie okazało się wielkim sukcesem — serwis stał się bardzo popularny, a po sprzedaży odniósł ogromny międzynarodowy sukces.",
     urlImage: imageZL,
     id: "znany-lekarz"
 
 },
 {
     title: "Abart",
-    description: "Abart is a Polish company specializing in the design and production of high-quality furniture. They focus on creating functional and aesthetically pleasing pieces that enhance living spaces.",
+    description: "Zinformatyzowaliśmy firmę ABART, obejmując naszym systemem każdy aspekt działalności — od automatycznych wycen, po śledzenie, rozliczanie i raportowanie całego procesu instalacji systemów LPG.",
     urlImage: imageAbart,
     id: "abart"
 },
 {
     title: "APS",
-    description: "APS is a Polish company that provides advanced IT solutions and services, focusing on software development, system integration, and IT consulting.",
+    description: "Zajmowaliśmy się także systemami kompleksowo zarządzającymi procesami windykacji — obsługa call center, wymiana danych osobowych z bankami, rozbudowane raportowanie (firmy: iCentrum S.A., APS Poland S.A.).",
     urlImage: imageAps,
     id: "aps"
 
 },
 {
     title: "Cuprum",
-    description: "Cuprum is a Polish company that specializes in the production of copper and copper alloys, serving various industries including construction, electronics, and automotive.",
+    description: "Dla KGHM CUPRUM przez lata przygotowywaliśmy dedykowane rozwiązania, które dbały o efektywną wymianę informacji w ramach tej firmy, przy jednoczesnym zapewnieniu odpowiedniej poufności.",
     urlImage: imageCuprum,
     id: "cuprum"
 },
 {
     title: "InstaGlass",
-    description: "InstaGlass is a company that specializes in the production and installation of high-quality glass products, including windows, doors, and facades, with a focus on innovation and sustainability.",
+    description: "Mamy także doświadczenie w systemach zarządzania produkcją i montażami. Stworzyliśmy kompleksowe rozwiązanie dla firmy InstaGlas, umożliwiające precyzyjne śledzenie wszystkich kosztów projektów, w tym kosztów pracowniczych, oraz finalne raportowanie rentowności.",
     urlImage: imageInstaGlass,
     id: "instaglass"
 },
 {title: "InstaCode",
-    description: "InstaCode is a cutting-edge platform that offers innovative solutions for software development, focusing on efficiency and user experience.",
+    description: "InstaCode to projekt stworzony z myślą o firmach potrzebujących niezawodnych rozwiązań IT. Od początku zaprojektowany i zbudowany przez nas z naciskiem na nowoczesny design, wydajność i skalowalność. Łączy w sobie aplikacje webowe, automatyzacje oraz integracje systemów, wspierając rozwój wielu branż.",
     urlImage: imageInstaCode,
     id: "instacode" 
 }]; 

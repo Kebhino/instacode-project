@@ -80,6 +80,7 @@ function App() {
                   maxW={"1200px"}
                   mx={"auto"}
                   justifyContent={"center"}
+                  w={"100%"}
                 >
                   <About />
                 </Grid>

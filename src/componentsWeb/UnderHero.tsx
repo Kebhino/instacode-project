@@ -8,7 +8,7 @@ import {
 
 import { ShieldCheck, ChartNoAxesCombined, Handshake } from "lucide-react";
 
-const UnderMain = () => {
+const UnderHero = () => {
   const iconSize = useBreakpointValue({ base: 20, md: 40, lg: 40 });
 
   return (
@@ -67,4 +67,4 @@ const UnderMain = () => {
   );
 };
 
-export default UnderMain;
+export default UnderHero;

@@ -1,5 +1,6 @@
 // src/pages/Contact.tsx
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Heading, Text, VStack } from "@chakra-ui/react";
+import { NavLink } from "./NavLink";
 
 const ONasElemenent = () => {
   return (
@@ -19,8 +20,8 @@ const ONasElemenent = () => {
           maxW="1000"
           textAlign="center"
           _hover={{
-            backgroundColor: "#E0F4FF", // tło karty po hooverze
-            transform: "scale(1.01)", // delikatne uniesienie
+            backgroundColor: "", // tło karty po hooverze
+
             boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
             transition: "all 0.1s ease", // mocniejszy cień na hover
           }}
@@ -49,42 +50,23 @@ const ONasElemenent = () => {
               czasach, gdy internet dopiero raczkował.
             </Text>
 
-            <Text fontSize="lg" color="gray.700">
-              Dla <b>KGHM CUPRUM</b> przez lata przygotowywaliśmy dedykowane
-              rozwiązania, które dbały o <b>efektywną wymianę informacji</b> w
-              ramach tej firmy, przy jednoczesnym zapewnieniu odpowiedniej
-              poufności.
-            </Text>
-
-            <Text fontSize="lg" color="gray.700">
-              Zinformatyzowaliśmy firmę <b>ABART</b>, obejmując naszym systemem
-              każdy aspekt działalności — od <b>automatycznych wycen</b>, po{" "}
-              <b>śledzenie, rozliczanie i raportowanie</b> całego procesu
-              instalacji systemów LPG.
-            </Text>
-
-            <Text fontSize="lg" color="gray.700">
-              Zajmowaliśmy się także{" "}
-              <b>systemami kompleksowo zarządzającymi procesami windykacji</b> —
-              obsługa call center, wymiana danych osobowych z bankami,
-              rozbudowane raportowanie (firmy: iCentrum S.A., APS Poland S.A.).
-            </Text>
-
-            <Text fontSize="lg" color="gray.700">
-              Mamy także doświadczenie w{" "}
-              <b>systemach zarządzania produkcją i montażami</b>. Stworzyliśmy
-              kompleksowe rozwiązanie dla firmy <b>InstaGlas</b>, umożliwiające
-              precyzyjne śledzenie wszystkich kosztów projektów, w tym kosztów
-              pracowniczych, oraz finalne raportowanie rentowności.
-            </Text>
-
-            <Text fontSize="lg" color="gray.700">
-              Nasz największy sukces to <b>ZnanyLekarz.pl</b>, który został w
-              całości zaprojektowany i wykonany przez nas, gdy pojawił się
-              pomysł na taki serwis. Nasz projekt i wykonanie okazało się
-              wielkim sukcesem — serwis stał się bardzo popularny, a po
-              sprzedaży odniósł ogromny <b>międzynarodowy sukces</b>.
-            </Text>
+            <Button
+              w={"100%"}
+              borderRadius={30}
+              backgroundColor="#00163E"
+              asChild
+              mt={10}
+              _hover={{
+                transform: "scale(1.02)", // delikatne powiększenie przy hoverze
+                transition: "all 0.3s ease", // płynna zmiana
+              }}
+            >
+              <NavLink to="/realizacje">
+                <Text fontSize="lg" color="white">
+                  Zobacz nasze realizacje
+                </Text>
+              </NavLink>
+            </Button>
           </VStack>
         </Box>
       </Box>

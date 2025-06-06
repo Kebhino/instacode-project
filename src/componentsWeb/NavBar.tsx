@@ -55,7 +55,7 @@ const NavigationBar = () => {
                 background: isActive("/realizacje")
                   ? "linear-gradient(90deg, #6EBEFF, #3A8DFF)"
                   : "#cce7ff",
-                opacity: isActive("/about") ? 1 : 0.4,
+                opacity: isActive("/realizacje") ? 1 : 0.4,
                 transition: "all 0.3s ease",
               }}
               _hover={{

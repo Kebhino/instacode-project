@@ -2,7 +2,7 @@ import { Grid, HStack, Text, Box } from "@chakra-ui/react";
 import ProjectCard from "./Projects/ProjectCard";
 import { Building, InfoIcon, Mail, Send, Phone } from "lucide-react";
 
-const ContacElement = () => {
+const ContactMain = () => {
   return (
     <>
       <Grid
@@ -73,4 +73,4 @@ const ContacElement = () => {
   );
 };
 
-export default ContacElement;
+export default ContactMain;

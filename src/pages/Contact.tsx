@@ -1,6 +1,6 @@
-import ContacElement from "@/componentsWeb/ContacElement";
-import Footer from "@/componentsWeb/FooterComp";
-import MainSection from "@/componentsWeb/MainSection";
+import ContactMain from "@/componentsWeb/ContactMain";
+import Footer from "@/componentsWeb/Footer";
+import Hero from "@/componentsWeb/Hero";
 import NavigationBar from "@/componentsWeb/NavBar";
 import { GridItem } from "@chakra-ui/react";
 
@@ -11,10 +11,10 @@ const Contact = () => {
         <NavigationBar />
       </GridItem>
       <GridItem>
-        <MainSection />
+        <Hero />
       </GridItem>
       <GridItem>
-        <ContacElement />
+        <ContactMain />
       </GridItem>
       <GridItem>
         <Footer />

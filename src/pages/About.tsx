@@ -1,8 +1,8 @@
 // src/pages/Contact.tsx
 
-import Footer from "@/componentsWeb/FooterComp";
+import Footer from "@/componentsWeb/Footer";
 import NavBar from "@/componentsWeb/NavBar";
-import MainSection from "@/componentsWeb/MainSection";
+import Hero from "@/componentsWeb/Hero";
 import ONasElemenent from "@/componentsWeb/oNas";
 import { GridItem } from "@chakra-ui/react";
 
@@ -13,7 +13,7 @@ const About = () => {
         <NavBar />
       </GridItem>
       <GridItem>
-        <MainSection />
+        <Hero />
       </GridItem>
 
       <GridItem>

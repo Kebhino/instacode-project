@@ -12,7 +12,13 @@ interface ProjectCardProps {
   urlImage?: string;
 }
 
-const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  urlImage,
+  icon,
+  children,
+  id,
+}: ProjectCardProps) => {
   return (
     <GridItem marginBottom={5}>
       <Box
@@ -22,7 +28,6 @@ const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
           transform: "scale(1.01)",
           transition: "all 0.1s ease",
         }}
-        border="2px solid green"
       >
         <Card.Root
           borderRadius="2xl"
@@ -50,8 +55,8 @@ const ProjectCard = ({ title, urlImage, icon, children }: ProjectCardProps) => {
               </Box>
             ) : urlImage ? (
               <Image
-                maxW="200px"
-                maxH="60px"
+                maxW={id === "znany-lekarz" ? "280px" : "240px"}
+                maxH="72px"
                 mx="auto"
                 src={urlImage}
                 alt={title}
