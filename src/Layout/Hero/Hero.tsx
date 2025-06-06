@@ -1,5 +1,5 @@
 import bgImage from "@/assets/tlo.webp";
-import bgImageMd from "@/assets/tlomd.webp";
+import bgImageMobile from "@/assets/tlomobile.webp";
 import { Box } from "@chakra-ui/react";
 import TextHero from "./TextHero";
 
@@ -9,7 +9,7 @@ const Hero = () => {
       p={{ base: 4, md: 8 }}
       minH={{ base: "200px", md: "300px", lg: "400px" }}
       bgImage={{
-        base: `url(${bgImageMd})`,
+        base: `url(${bgImageMobile})`,
         md: `url(${bgImage})`,
         lg: `url(${bgImage})`,
       }}
