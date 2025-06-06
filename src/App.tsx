@@ -9,86 +9,74 @@ import { Grid } from "@chakra-ui/react";
 function App() {
   return (
     <>
-      <Grid>
-        <Routes>
-          {/* Strona główna */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Grid
-                  templateRows="auto 1fr auto auto"
-                  templateColumns={"1fr"}
-                  minH="auto"
-                  maxW={"1200px"}
-                  mx={"auto"}
-                  justifyContent={"center"}
-                  w={"100%"}
-                >
-                  <MainPage />
-                </Grid>
-              </>
-            }
-          />
+      <Routes>
+        {/* Strona główna */}
+        <Route
+          path="/"
+          element={
+            <>
+              <MainPage />
+            </>
+          }
+        />
 
-          {/* Podstrona Kontakt */}
-          <Route
-            path="/kontakt"
-            element={
-              <>
-                <Grid
-                  templateRows="auto 1fr auto auto"
-                  templateColumns={"1fr"}
-                  minH="auto"
-                  maxW={"1200px"}
-                  mx={"auto"}
-                  justifyContent={"center"}
-                  w={"100%"}
-                >
-                  <Contact />
-                </Grid>
-              </>
-            }
-          />
-          <Route
-            path="/realizacje"
-            element={
-              <>
-                <Grid
-                  templateRows="auto 1fr auto auto"
-                  templateColumns={"1fr"}
-                  minH="auto"
-                  maxW={"1200px"}
-                  mx={"auto"}
-                  justifyContent={"center"}
-                  w={"100%"}
-                >
-                  <RealizacjeGrid />
-                </Grid>
-              </>
-            }
-          />
+        {/* Podstrona Kontakt */}
+        <Route
+          path="/kontakt"
+          element={
+            <>
+              <Grid
+                templateRows="auto 1fr auto auto"
+                templateColumns={"1fr"}
+                minH="auto"
+                maxW={"1200px"}
+                mx={"auto"}
+                justifyContent={"center"}
+                w={"100%"}
+              >
+                <Contact />
+              </Grid>
+            </>
+          }
+        />
+        <Route
+          path="/realizacje"
+          element={
+            <>
+              <Grid
+                templateRows="auto 1fr auto auto"
+                templateColumns={"1fr"}
+                minH="auto"
+                maxW={"1200px"}
+                mx={"auto"}
+                justifyContent={"center"}
+                w={"100%"}
+              >
+                <RealizacjeGrid />
+              </Grid>
+            </>
+          }
+        />
 
-          <Route
-            path="/about"
-            element={
-              <>
-                <Grid
-                  templateRows="auto 1fr auto auto"
-                  templateColumns={"1fr"}
-                  minH="auto"
-                  maxW={"1200px"}
-                  mx={"auto"}
-                  justifyContent={"center"}
-                  w={"100%"}
-                >
-                  <About />
-                </Grid>
-              </>
-            }
-          />
-        </Routes>
-      </Grid>
+        <Route
+          path="/about"
+          element={
+            <>
+              <Grid
+                templateRows="auto 1fr auto auto"
+                templateColumns={"1fr"}
+                minH="auto"
+                maxW={"1200px"}
+                mx={"auto"}
+                justifyContent={"center"}
+                w={"100%"}
+              >
+                <About />
+              </Grid>
+            </>
+          }
+        />
+      </Routes>
     </>
   );
 }

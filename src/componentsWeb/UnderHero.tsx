@@ -14,6 +14,7 @@ const UnderHero = () => {
   return (
     <SimpleGrid
       columns={3}
+      color={"#00163E"}
       gap={3}
       bg="#F6FCFE"
       padding={{ base: 4, md: 10 }}

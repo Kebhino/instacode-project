@@ -17,6 +17,7 @@ const Oferta = () => {
       <SimpleGrid
         alignItems="start"
         columns={{ base: 1, md: 3 }}
+        color={"#00163E"}
         gap={8}
         mt={10}
         px={{ base: 4, md: 20 }}
@@ -24,22 +25,17 @@ const Oferta = () => {
         borderRadius={10}
         boxShadow="20px 20px 100px rgba(106, 173, 255, 0.1)"
       >
-        <Box>
+        <Box textAlign="center" lineHeight="1.6" mb={4}>
           <Text
             className="oferta-text"
-            color="#00163E"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
-            textAlign="center"
           >
             Systemy produkcyjne
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            color="gray.600"
             className="oferta-text"
-            textAlign={"center"}
-            lineHeight="1.8"
             maxW="400px"
             mt={2}
           >
@@ -50,10 +46,9 @@ const Oferta = () => {
           </Text>
         </Box>
 
-        <Box textAlign="center">
+        <Box textAlign="center" lineHeight="1.6">
           <Text
             className="oferta-text"
-            color="#00163E"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
             textAlign="center"
@@ -62,10 +57,8 @@ const Oferta = () => {
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            color="gray.600"
             className="oferta-text"
             textAlign={"center"}
-            lineHeight="1.8"
             maxW="400px"
             mt={2}
           >
@@ -76,22 +69,17 @@ const Oferta = () => {
           </Text>
         </Box>
 
-        <Box textAlign="center">
+        <Box textAlign="center" lineHeight="1.6">
           <Text
             className="oferta-text"
-            color="#00163E"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
-            textAlign="center"
           >
             Integracje i automatyzacje
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            color="gray.600"
             className="oferta-text"
-            textAlign={"center"}
-            lineHeight="1.8"
             maxW="400px"
             mt={2}
           >

@@ -1,4 +1,4 @@
-import { Grid } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import NavigationBar from "./NavBar";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -18,11 +18,16 @@ const Layout = ({ children }: LayoutProps) => {
       justifyContent={"center"}
       w={"100%"}
     >
-      <NavigationBar />
-      <Hero />
-      {children}
-
-      <Footer />
+      <GridItem>
+        <NavigationBar />
+      </GridItem>
+      <GridItem color={"black"}>
+        <Hero />
+      </GridItem>
+      <GridItem>{children}</GridItem>
+      <GridItem>
+        <Footer />
+      </GridItem>
     </Grid>
   );
 };
