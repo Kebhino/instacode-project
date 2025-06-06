@@ -1,7 +1,6 @@
-import { Box } from "@chakra-ui/react";
 import bgImage from "@/assets/tlo.webp";
-import bgImageMobile from "@/assets/tlomobile.webp";
 import bgImageMd from "@/assets/tlomd.webp";
+import { Box } from "@chakra-ui/react";
 import TextHero from "./TextHero";
 
 const Hero = () => {
