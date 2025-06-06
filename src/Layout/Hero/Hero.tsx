@@ -1,5 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import bgImage from "@/assets/tlo.webp";
+import bgImageMobile from "@/assets/tlomobile.webp";
+import bgImageMd from "@/assets/tlomd.webp";
 import TextHero from "./TextHero";
 
 const Hero = () => {
@@ -7,7 +9,11 @@ const Hero = () => {
     <Box
       p={{ base: 4, md: 8 }}
       minH={{ base: "200px", md: "300px", lg: "400px" }}
-      bgImage={`url(${bgImage})`}
+      bgImage={{
+        base: `url(${bgImageMobile})`,
+        md: `url(${bgImageMd})`,
+        lg: `url(${bgImage})`,
+      }}
       position="relative"
       overflow="hidden"
       bgColor={"#0b2b4c"}
