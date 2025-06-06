@@ -9,8 +9,8 @@ const GridCard = () => {
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
-          xl: "repeat(3, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
         }}
         gap={6}
         p={5}

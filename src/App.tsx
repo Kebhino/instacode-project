@@ -23,6 +23,7 @@ function App() {
                   maxW={"1200px"}
                   mx={"auto"}
                   justifyContent={"center"}
+                  w={"100%"}
                 >
                   <MainPage />
                 </Grid>
@@ -42,6 +43,7 @@ function App() {
                   maxW={"1200px"}
                   mx={"auto"}
                   justifyContent={"center"}
+                  w={"100%"}
                 >
                   <Contact />
                 </Grid>
@@ -59,6 +61,7 @@ function App() {
                   maxW={"1200px"}
                   mx={"auto"}
                   justifyContent={"center"}
+                  w={"100%"}
                 >
                   <RealizacjeGrid />
                 </Grid>
