@@ -1,5 +1,5 @@
 import LogoAS from "@/assets/logo-nowe-black.webp";
-import { Box, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, Button, CloseButton, Drawer, DrawerContent, DrawerRoot, DrawerTrigger, HStack, Image, Portal, Text } from "@chakra-ui/react";
 import { NavLink } from "../componentsWeb/NavLink";
 import { useLocation } from "react-router-dom";
 
@@ -25,6 +25,39 @@ const NavigationBar = () => {
         py={2}
         px={{ base: 0, md: 4, lg: 4 }}
       >
+      
+    <Drawer.Root>
+      <Drawer.Trigger asChild>
+        <Button variant="outline" size="sm">
+          Open Drawer
+        </Button>
+      </Drawer.Trigger>
+      <Portal>
+        <Drawer.Backdrop />
+        <Drawer.Positioner>
+          <Drawer.Content>
+            <Drawer.Header>
+              <Drawer.Title>Drawer Title</Drawer.Title>
+            </Drawer.Header>
+            <Drawer.Body>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Drawer.Body>
+            <Drawer.Footer>
+              <Button variant="outline">Cancel</Button>
+              <Button>Save</Button>
+            </Drawer.Footer>
+            <Drawer.CloseTrigger asChild>
+              <CloseButton size="sm" />
+            </Drawer.CloseTrigger>
+          </Drawer.Content>
+        </Drawer.Positioner>
+      </Portal>
+    </Drawer.Root>
+
+
         <NavLink to="/">
           <Image
             src={LogoAS}
