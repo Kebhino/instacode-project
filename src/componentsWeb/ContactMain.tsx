@@ -57,14 +57,14 @@ const ContactMain = () => {
 
           <HStack mt={5}>
             <Send size={20} color="black" />
-            <Text ml={2} color={"blue"} fontWeight={"semibold"}>
-              biuro@elemel.pl
+            <Text ml={2} color={"blue"} fontWeight={"semibold"} asChild>
+              <a href="mailto:biuro@elemel.pl">biuro@elemel.pl </a>
             </Text>
           </HStack>
           <HStack mt={2}>
             <Phone size={20} color="black" />
-            <Text ml={1} color={"blue"} fontWeight={"semibold"}>
-              +48 509 96 767 23
+            <Text ml={1} color={"blue"} fontWeight={"semibold"} asChild>
+              <a href="tel:+48 509 96 767 23 ">+48 509 96 767 23</a>
             </Text>
           </HStack>
         </ProjectCard>

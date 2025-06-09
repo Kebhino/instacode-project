@@ -28,15 +28,13 @@ const Realizacje = () => {
         mx="auto"
         placeItems="center"
       >
-        {/* // TODO: Loga wrzucic w boxa i ustawić wysokosc zeby nie bawic się marginesami*/}
-
         {/* Znany Lekarz */}
         <Box
           bg="#F6FCFE"
           p={3}
           borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
-          height={{ base: "auto", md: "auto", lg: "170px" }}
+          height={"auto"}
           _hover={{
             bg: "#cce7ff",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
@@ -50,7 +48,13 @@ const Realizacje = () => {
               <Image src={logoZL} height={"32px"} />
             </Center>
 
-            <Text marginLeft={2} marginTop={2} fontSize={10} textAlign={"left"}>
+            <Text
+              marginLeft={2}
+              marginTop={2}
+              fontSize={{ base: "sm", md: "md", lg: "sm" }}
+              lineHeight="1.4"
+              textAlign={"left"}
+            >
               Największy nasz sukces to ZnanyLekarz.pl, który został w całości
               zaprojektowany i wykonany przez nas gdy pojawił się pomysł na taki
               serwis. Nasz projekt i wykonanie okazało się wielkim sukcesem,
@@ -65,7 +69,7 @@ const Realizacje = () => {
           p={3}
           borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
-          height={{ base: "auto", md: "auto", lg: "170px" }}
+          height={"auto"}
           _hover={{
             bg: "#cce7ff",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
@@ -78,7 +82,13 @@ const Realizacje = () => {
               <Image src={logoCuprum} height={"40px"} />
             </Center>
 
-            <Text marginLeft={2} marginTop={2} fontSize={10} textAlign={"left"}>
+            <Text
+              fontSize={{ base: "sm", md: "md", lg: "sm" }}
+              lineHeight="1.4"
+              marginLeft={2}
+              marginTop={2}
+              textAlign={"left"}
+            >
               Dla KGHM CUPRUM przez lata przygotowywaliśmy dedykowane
               rozwiązania, które dbały o efektywną wymianę informacji w ramach
               tej firmy przy jednoczesnym zapewnieniu odpowiedniej poufności.
@@ -92,7 +102,7 @@ const Realizacje = () => {
           p={3}
           borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
-          height={{ base: "auto", md: "auto", lg: "170px" }}
+          height={"auto"}
           _hover={{
             bg: "#cce7ff",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
@@ -103,7 +113,13 @@ const Realizacje = () => {
           <VStack gap={2} align="center" marginTop={1}>
             <Image src={logoIG} height={"40px"} />
 
-            <Text marginLeft={2} fontSize={10} marginTop={2} textAlign={"left"}>
+            <Text
+              marginLeft={2}
+              fontSize={{ base: "sm", md: "md", lg: "sm" }}
+              lineHeight="1.4"
+              marginTop={2}
+              textAlign={"left"}
+            >
               Zinformatyzowaliśmy firmę ABART, obejmując naszym systemem każdy
               aspekt działalności firmy, od automatycznych wycen poczynając, po
               śledzenie, rozliczanie i raportowanie całego procesu instalacji
