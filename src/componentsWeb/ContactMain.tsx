@@ -64,7 +64,7 @@ const ContactMain = () => {
           <HStack mt={2}>
             <Phone size={20} color="black" />
             <Text ml={1} color={"blue"} fontWeight={"semibold"} asChild>
-              <a href="tel:+48 509 96 767 23 ">+48 509 96 767 23</a>
+              <a href="tel:+48 509 96 76 23 ">+48 509 96 76 23</a>
             </Text>
           </HStack>
         </ProjectCard>
