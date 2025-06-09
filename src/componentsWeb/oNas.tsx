@@ -26,11 +26,11 @@ const ONasElemenent = () => {
             transition: "all 0.1s ease", // mocniejszy cień na hover
           }}
         >
-          <Heading size="lg" mb={4} color="blue.500">
+          <Heading as={"h1"} size="lg" mb={4} color="blue.500">
             O nas:
           </Heading>
-          <VStack gap={4} align="start">
-            <Text fontSize="lg" color="gray.700">
+          <VStack gap={4} align="start" textAlign={"left"}>
+            <Text fontSize="lg" color="gray.700" as={"h2"}>
               Systemami informatycznymi zajmujemy się od <b>2002 roku</b>, gdy
               internet dopiero na dobre się rozkręcał. Na przestrzeni lat
               tworzyliśmy <b>dedykowane systemy informatyczne</b> dla wielu
@@ -38,16 +38,20 @@ const ONasElemenent = () => {
               <b>indywidualnych potrzebach naszych klientów</b>.
             </Text>
 
-            <Text fontSize="lg" color="gray.700">
+            <Text fontSize="lg" color="gray.700" as={"h2"}>
               Potrafimy zrozumieć, czego klient potrzebuje, i zaproponować
               rozwiązania, z których będzie zadowolony.
             </Text>
 
-            <Text fontSize="lg" color="gray.700">
+            <Text fontSize="lg" color="gray.700" as={"h2"}>
               Pierwsze nasze systemy automatyzowały usługi dostarczane przez
               providerów internetowych — obsługę domen internetowych, tworzenie
               kont pocztowych, FTP, baz danych, hosting stron. Wszystko to w
               czasach, gdy internet dopiero raczkował.
+            </Text>
+            <Text fontSize="lg" color="gray.700" as={"h2"}>
+              Przez lata pozostawaliśmy na bieżąco z rozwojem technologii
+              zdobywając doświadczenie i realizując kolejne projekty.
             </Text>
 
             <Button
