@@ -110,7 +110,7 @@ const Oferta = () => {
             mt={2}
           >
             Łączymy systemy i automatyzujemy procesy, byś mógł działać szybciej
-            i efektywniej. Integrujemy z API, ERP, CRM, sklepami online i innymi
+            i efektywniej. Integrujemy z API, CRM, sklepami online i innymi
             narzędziami, eliminując ręczne czynności i błędy. Twoja firma
             pracuje płynniej i oszczędza czas.
           </Text>
