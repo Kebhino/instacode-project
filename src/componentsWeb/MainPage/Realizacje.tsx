@@ -34,7 +34,7 @@ const Realizacje = () => {
         <Box
           bg="#F6FCFE"
           p={3}
-          borderRadius={10}
+          borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
           _hover={{
@@ -63,7 +63,7 @@ const Realizacje = () => {
         <Box
           bg="#F6FCFE"
           p={3}
-          borderRadius={10}
+          borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
           _hover={{
@@ -90,7 +90,7 @@ const Realizacje = () => {
         <Box
           bg="#F6FCFE"
           p={3}
-          borderRadius={10}
+          borderRadius={20}
           boxShadow="20px 20px 100px rgba(106, 173, 255, 0.2)"
           height={{ base: "auto", md: "auto", lg: "170px" }}
           _hover={{

@@ -7,7 +7,6 @@ const Oferta = () => {
       bg="white"
       py={{ base: 2, md: 4 }}
       textAlign="center"
-      className="oferta-group"
       transition="all 0.3s ease"
       maxW="1200px"
       mx={"auto"}
@@ -22,14 +21,22 @@ const Oferta = () => {
         gap={8}
         mt={10}
         px={{ base: 4, md: 20 }}
-        className="oferta-text"
-        borderRadius={10}
-        boxShadow="20px 20px 100px rgba(106, 173, 255, 0.1)"
         pb={10}
       >
-        <Box textAlign="center" lineHeight="1.6" mb={4}>
+        <Box
+          textAlign="center"
+          lineHeight="1.6"
+          mb={4}
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.3s ease",
+            borderRadius: "20px",
+          }}
+          p={3}
+        >
           <Text
-            className="oferta-text"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
           >
@@ -37,7 +44,6 @@ const Oferta = () => {
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            className="oferta-text"
             maxW="400px"
             mt={2}
           >
@@ -48,9 +54,19 @@ const Oferta = () => {
           </Text>
         </Box>
 
-        <Box textAlign="center" lineHeight="1.6">
+        <Box
+          textAlign="center"
+          lineHeight="1.6"
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.3s ease",
+            borderRadius: "20px",
+          }}
+          p={3}
+        >
           <Text
-            className="oferta-text"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
             textAlign="center"
@@ -59,7 +75,6 @@ const Oferta = () => {
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            className="oferta-text"
             textAlign={"center"}
             maxW="400px"
             mt={2}
@@ -71,9 +86,19 @@ const Oferta = () => {
           </Text>
         </Box>
 
-        <Box textAlign="center" lineHeight="1.6">
+        <Box
+          textAlign="center"
+          lineHeight="1.6"
+          _hover={{
+            bg: "#cce7ff",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+            transform: "scale(1.05)",
+            transition: "all 0.3s ease",
+            borderRadius: "20px",
+          }}
+          p={3}
+        >
           <Text
-            className="oferta-text"
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
             fontWeight="bold"
           >
@@ -81,7 +106,6 @@ const Oferta = () => {
           </Text>
           <Text
             fontSize={{ base: "sm", md: "md", lg: "sm" }}
-            className="oferta-text"
             maxW="400px"
             mt={2}
           >
