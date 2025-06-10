@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# InstaCode
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[InstaCode.pl](https://instacode.pl) – Rozwiązania technologiczne dla biznesu
 
-Currently, two official plugins are available:
+InstaCode to firma tworząca dedykowane systemy informatyczne od 2002 roku. Przez ponad dwie dekady wspieraliśmy klientów w dostosowywaniu rozwiązań IT do ich indywidualnych potrzeb – od automatyzacji usług internetowych po nowoczesne aplikacje webowe. Zawsze na bieżąco z rozwojem technologii, dostarczamy niezawodne i skalowalne systemy dla firm.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 O nas
 
-## Expanding the ESLint configuration
+> „Systemami informatycznymi zajmujemy się od 2002 roku, gdy internet dopiero na dobre się rozkręcał. Na przestrzeni lat tworzyliśmy dedykowane systemy informatyczne dla wielu firm, zawsze skupiając się na indywidualnych potrzebach naszych klientów.”
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Nasze doświadczenie:
+- Automatyzacja usług ISP: domeny, konta e-mail, FTP, bazy danych, hosting
+- Dedykowane systemy ERP/CRM
+- Aplikacje webowe dopasowane do potrzeb biznesu
+- Wsparcie technologiczne i rozwój oprogramowania
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🧰 Stack technologiczny
+
+Projekt strony został wykonany przy użyciu nowoczesnych technologii frontendowych:
+
+- **React** (z TypeScript)
+- **Chakra UI** – modularny system stylowania
+- **Vite** – szybki bundler i dev server
+- **Framer Motion** – płynne animacje
+- **React Router** – routing SPA
+- **GitHub + Vercel** – hosting i CI/CD
+
+---
+
+## 🚀 Uruchamianie lokalnie
+
+```bash
+# 1. Klonuj repozytorium
+git clone https://github.com/Kebhino/instacode-project.git
+cd instacode-project
+
+# 2. Zainstaluj zależności
+npm install
+
+# 3. Uruchom lokalny serwer developerski
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Strona będzie dostępna pod `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🌐 Demo
+
+Zobacz stronę na żywo:  
+👉 [https://instacode.pl](https://instacode.pl)
+
+---
+
+## 📸 Zrzuty ekranu
+
+<!-- Możesz tu wkleić zrzuty, np.: -->
+<!-- ![Zrzut ekranu 1](./screenshots/homepage.png) -->
+
+---
+
+## 📅 Roadmap (opcjonalnie)
+
+- [ ] Dodanie sekcji z ofertą usług
+- [ ] Wersja angielska strony
+- [ ] SEO i optymalizacja wydajności
+- [ ] Blog technologiczny
+
+---
+
+## 🤝 Kontakt
+
+Masz pytania lub chcesz nawiązać współpracę?  
+Wejdź na stronę [instacode.pl/kontakt](https://instacode.pl/kontakt) lub napisz do nas bezpośrednio przez formularz kontaktowy.
+
+---
+
+## 📄 Licencja
+
+Projekt komercyjny — wszelkie prawa zastrzeżone przez InstaCode.
